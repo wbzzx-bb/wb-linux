@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-06-05T12:42:46.399Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36" etag="THVi_IcnnxzxsHz4Gy_7" version="24.4.14" type="github">
+<mxfile host="app.diagrams.net" modified="2024-06-05T12:49:04.502Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36" etag="eV1guwvmYnyB9YhWzjhA" version="24.4.14" type="github">
   <diagram id="wFE0QG_FPsp0jaGvCLVb" name="Page-1">
     <mxGraphModel dx="2074" dy="1106" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -73,6 +73,9 @@
         <mxCell id="jPp7AaR7GWy1GO26mgqh-37" value="堆栈和bss段在header.S中被初始化之后，内核需要初始化全局堆。&lt;div&gt;全局堆初始化后，才能使用GET_HEAP方法&lt;/div&gt;" style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="jPp7AaR7GWy1GO26mgqh-35">
           <mxGeometry x="10" y="20" width="330" height="70" as="geometry" />
         </mxCell>
+        <mxCell id="jPp7AaR7GWy1GO26mgqh-45" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="jPp7AaR7GWy1GO26mgqh-39" target="jPp7AaR7GWy1GO26mgqh-42">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="jPp7AaR7GWy1GO26mgqh-39" value="validate_cpu" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="820" y="930" width="350" height="100" as="geometry" />
         </mxCell>
@@ -83,13 +86,13 @@
           <mxGeometry x="10" y="60" width="330" height="30" as="geometry" />
         </mxCell>
         <mxCell id="jPp7AaR7GWy1GO26mgqh-42" value="set_bios_mode" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="820" y="1100" width="350" height="100" as="geometry" />
+          <mxGeometry x="820" y="1100" width="350" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="jPp7AaR7GWy1GO26mgqh-43" value="arch\x86\boot\cpu.c" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="jPp7AaR7GWy1GO26mgqh-42">
-          <mxGeometry y="30" width="130" height="30" as="geometry" />
+        <mxCell id="jPp7AaR7GWy1GO26mgqh-46" value="detect_memory" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="820" y="1230" width="350" height="130" as="geometry" />
         </mxCell>
-        <mxCell id="jPp7AaR7GWy1GO26mgqh-44" value="检查CPU是否支持" style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="jPp7AaR7GWy1GO26mgqh-42">
-          <mxGeometry x="10" y="60" width="330" height="30" as="geometry" />
+        <mxCell id="jPp7AaR7GWy1GO26mgqh-47" value="使用detect_memory方法进行内存侦测，以得到系统当前内存的使用分布。包括0xe820（获取全部内存分配）、0xe801和0xe88（获取临近内存大小）&lt;div&gt;内存侦测结束后，内存分配信息将被希尔芙到e820entry（820模式）数据组中，并在在dmesg中可以看到这个数组的内容&lt;/div&gt;" style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="jPp7AaR7GWy1GO26mgqh-46">
+          <mxGeometry x="10" y="30" width="330" height="100" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

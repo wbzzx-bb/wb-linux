@@ -1,9 +1,18 @@
-<mxfile host="app.diagrams.net" modified="2024-06-05T12:49:04.502Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36" etag="eV1guwvmYnyB9YhWzjhA" version="24.4.14" type="github">
+<mxfile host="app.diagrams.net" modified="2024-06-05T13:07:13.282Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36" etag="rbLkL3YbDHmjMW1zRa9r" version="24.4.14" type="github">
   <diagram id="wFE0QG_FPsp0jaGvCLVb" name="Page-1">
     <mxGraphModel dx="2074" dy="1106" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="jPp7AaR7GWy1GO26mgqh-68" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="jPp7AaR7GWy1GO26mgqh-54" target="jPp7AaR7GWy1GO26mgqh-56">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jPp7AaR7GWy1GO26mgqh-54" value="query_ist" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="820" y="1730" width="350" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="jPp7AaR7GWy1GO26mgqh-55" value="&lt;div&gt;内核调用query_ist方法获取intel SpeedStep信息，这个方法首先检查CPU类型，然后调用0x15中断获取这个信息并放入到boot_params中&lt;/div&gt;" style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="jPp7AaR7GWy1GO26mgqh-54">
+          <mxGeometry x="10" y="30" width="330" height="100" as="geometry" />
+        </mxCell>
         <mxCell id="215-eHgmbYdkAp0iwA8i-2" value="&lt;span style=&quot;font-weight: 700;&quot;&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;arch/x86/boot/header.S&lt;/font&gt;&lt;/span&gt;" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="80" y="80" width="290" height="30" as="geometry" />
         </mxCell>
@@ -85,6 +94,9 @@
         <mxCell id="jPp7AaR7GWy1GO26mgqh-40" value="检查CPU是否支持" style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="jPp7AaR7GWy1GO26mgqh-39">
           <mxGeometry x="10" y="60" width="330" height="30" as="geometry" />
         </mxCell>
+        <mxCell id="jPp7AaR7GWy1GO26mgqh-50" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="jPp7AaR7GWy1GO26mgqh-42" target="jPp7AaR7GWy1GO26mgqh-46">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="jPp7AaR7GWy1GO26mgqh-42" value="set_bios_mode" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="820" y="1100" width="350" height="60" as="geometry" />
         </mxCell>
@@ -93,6 +105,60 @@
         </mxCell>
         <mxCell id="jPp7AaR7GWy1GO26mgqh-47" value="使用detect_memory方法进行内存侦测，以得到系统当前内存的使用分布。包括0xe820（获取全部内存分配）、0xe801和0xe88（获取临近内存大小）&lt;div&gt;内存侦测结束后，内存分配信息将被希尔芙到e820entry（820模式）数据组中，并在在dmesg中可以看到这个数组的内容&lt;/div&gt;" style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="jPp7AaR7GWy1GO26mgqh-46">
           <mxGeometry x="10" y="30" width="330" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="jPp7AaR7GWy1GO26mgqh-64" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="jPp7AaR7GWy1GO26mgqh-48" target="jPp7AaR7GWy1GO26mgqh-52">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jPp7AaR7GWy1GO26mgqh-48" value="keyboard_init" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="820" y="1440" width="350" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="jPp7AaR7GWy1GO26mgqh-49" value="键盘初始化" style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="jPp7AaR7GWy1GO26mgqh-48">
+          <mxGeometry x="10" y="30" width="330" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="jPp7AaR7GWy1GO26mgqh-51" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="jPp7AaR7GWy1GO26mgqh-47" target="jPp7AaR7GWy1GO26mgqh-48">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jPp7AaR7GWy1GO26mgqh-69" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="jPp7AaR7GWy1GO26mgqh-56" target="jPp7AaR7GWy1GO26mgqh-58">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jPp7AaR7GWy1GO26mgqh-56" value="query_apm_bios" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="820" y="1910" width="350" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="jPp7AaR7GWy1GO26mgqh-57" value="&lt;div&gt;调用query_apm_bios方法从BIOS获取高级电源管理信息&lt;/div&gt;" style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="jPp7AaR7GWy1GO26mgqh-56">
+          <mxGeometry x="10" y="30" width="330" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="jPp7AaR7GWy1GO26mgqh-72" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="jPp7AaR7GWy1GO26mgqh-58" target="jPp7AaR7GWy1GO26mgqh-70">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jPp7AaR7GWy1GO26mgqh-58" value="query_edd" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="820" y="2060" width="350" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="jPp7AaR7GWy1GO26mgqh-59" value="&lt;div&gt;从BIOS中查询Enhanced DISK Drive信息&lt;/div&gt;" style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="jPp7AaR7GWy1GO26mgqh-58">
+          <mxGeometry x="10" y="30" width="330" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="jPp7AaR7GWy1GO26mgqh-67" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="jPp7AaR7GWy1GO26mgqh-52" target="jPp7AaR7GWy1GO26mgqh-54">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jPp7AaR7GWy1GO26mgqh-52" value="query_mca" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="820" y="1540" width="350" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="jPp7AaR7GWy1GO26mgqh-53" value="&lt;div&gt;query_mca方法调用0x15中断来获取机器的型号信息、BIOS版本以及其他一些硬件相关的属性。&lt;/div&gt;&lt;div&gt;query_mca代码的最后，代码将es:bx指向的内存地址的内容拷贝到boot_params.sys_desc_table&lt;/div&gt;" style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="jPp7AaR7GWy1GO26mgqh-52">
+          <mxGeometry x="10" y="30" width="330" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="jPp7AaR7GWy1GO26mgqh-70" value="set_video" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="820" y="2210" width="350" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="jPp7AaR7GWy1GO26mgqh-71" value="&lt;div&gt;set_video函数从boot_params.hdr中获取显示模式设置（vid_mode）&lt;/div&gt;" style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="jPp7AaR7GWy1GO26mgqh-70">
+          <mxGeometry x="10" y="30" width="330" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="jPp7AaR7GWy1GO26mgqh-73" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;labelPosition=left;verticalLabelPosition=middle;align=right;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="770" y="1530" width="20" height="650" as="geometry" />
+        </mxCell>
+        <mxCell id="jPp7AaR7GWy1GO26mgqh-61" value="获取系统信息" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="730" y="1840" width="10" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="jPp7AaR7GWy1GO26mgqh-75" value="go_to_protected_mode" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="820" y="2350" width="350" height="100" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

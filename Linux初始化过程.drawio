@@ -1,22 +1,22 @@
-<mxfile host="app.diagrams.net" modified="2024-06-05T13:07:13.282Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36" etag="rbLkL3YbDHmjMW1zRa9r" version="24.4.14" type="github">
+<mxfile host="app.diagrams.net" modified="2024-06-06T12:08:30.454Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36" etag="909PH0CqOFQhteeB6AMe" version="24.4.15" type="github">
   <diagram id="wFE0QG_FPsp0jaGvCLVb" name="Page-1">
-    <mxGraphModel dx="2074" dy="1106" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1430" dy="763" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="jPp7AaR7GWy1GO26mgqh-68" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="jPp7AaR7GWy1GO26mgqh-54" target="jPp7AaR7GWy1GO26mgqh-56">
+        <mxCell id="jPp7AaR7GWy1GO26mgqh-68" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="jPp7AaR7GWy1GO26mgqh-54" target="jPp7AaR7GWy1GO26mgqh-56" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="jPp7AaR7GWy1GO26mgqh-54" value="query_ist" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="jPp7AaR7GWy1GO26mgqh-54" value="query_ist" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="820" y="1730" width="350" height="130" as="geometry" />
         </mxCell>
-        <mxCell id="jPp7AaR7GWy1GO26mgqh-55" value="&lt;div&gt;内核调用query_ist方法获取intel SpeedStep信息，这个方法首先检查CPU类型，然后调用0x15中断获取这个信息并放入到boot_params中&lt;/div&gt;" style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="jPp7AaR7GWy1GO26mgqh-54">
+        <mxCell id="jPp7AaR7GWy1GO26mgqh-55" value="&lt;div&gt;内核调用query_ist方法获取intel SpeedStep信息，这个方法首先检查CPU类型，然后调用0x15中断获取这个信息并放入到boot_params中&lt;/div&gt;" style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="jPp7AaR7GWy1GO26mgqh-54" vertex="1">
           <mxGeometry x="10" y="30" width="330" height="100" as="geometry" />
         </mxCell>
         <mxCell id="215-eHgmbYdkAp0iwA8i-2" value="&lt;span style=&quot;font-weight: 700;&quot;&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;arch/x86/boot/header.S&lt;/font&gt;&lt;/span&gt;" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="80" y="80" width="290" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="jPp7AaR7GWy1GO26mgqh-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="215-eHgmbYdkAp0iwA8i-3" target="jPp7AaR7GWy1GO26mgqh-12">
+        <mxCell id="jPp7AaR7GWy1GO26mgqh-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="215-eHgmbYdkAp0iwA8i-3" target="jPp7AaR7GWy1GO26mgqh-12" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="215-eHgmbYdkAp0iwA8i-3" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;_start&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" parent="1" vertex="1">
@@ -25,140 +25,218 @@
         <mxCell id="215-eHgmbYdkAp0iwA8i-7" value="main" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="120" y="600" width="200" height="200" as="geometry" />
         </mxCell>
-        <mxCell id="jPp7AaR7GWy1GO26mgqh-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="jPp7AaR7GWy1GO26mgqh-12" target="215-eHgmbYdkAp0iwA8i-7">
+        <mxCell id="jPp7AaR7GWy1GO26mgqh-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="jPp7AaR7GWy1GO26mgqh-12" target="215-eHgmbYdkAp0iwA8i-7" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="jPp7AaR7GWy1GO26mgqh-12" value="&lt;span style=&quot;font-size: medium; text-align: left;&quot;&gt;start_of_setup&lt;/span&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="jPp7AaR7GWy1GO26mgqh-12" value="&lt;span style=&quot;font-size: medium; text-align: left;&quot;&gt;start_of_setup&lt;/span&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="120" y="410" width="200" height="120" as="geometry" />
         </mxCell>
-        <mxCell id="jPp7AaR7GWy1GO26mgqh-13" value="段寄存器设置" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="jPp7AaR7GWy1GO26mgqh-12">
+        <mxCell id="jPp7AaR7GWy1GO26mgqh-13" value="段寄存器设置" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="jPp7AaR7GWy1GO26mgqh-12" vertex="1">
           <mxGeometry y="30" width="200" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="jPp7AaR7GWy1GO26mgqh-14" value="设置堆栈" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="jPp7AaR7GWy1GO26mgqh-12">
+        <mxCell id="jPp7AaR7GWy1GO26mgqh-14" value="设置堆栈" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="jPp7AaR7GWy1GO26mgqh-12" vertex="1">
           <mxGeometry y="60" width="200" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="jPp7AaR7GWy1GO26mgqh-15" value="设置BSS" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="jPp7AaR7GWy1GO26mgqh-12">
+        <mxCell id="jPp7AaR7GWy1GO26mgqh-15" value="设置BSS" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="jPp7AaR7GWy1GO26mgqh-12" vertex="1">
           <mxGeometry y="90" width="200" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="jPp7AaR7GWy1GO26mgqh-21" value="&lt;div style=&quot;color: #292929;background-color: #ffffff;font-family: Consolas, &#39;Courier New&#39;, monospace;font-weight: normal;font-size: 14px;line-height: 19px;white-space: pre;&quot;&gt;&lt;div&gt;&lt;span style=&quot;color: #515151;&quot;&gt;# Jump to C code (should not return)&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #292929;&quot;&gt;&amp;nbsp; &amp;nbsp; &lt;/span&gt;&lt;span style=&quot;color: #001080;&quot;&gt;calll&lt;/span&gt;&lt;span style=&quot;color: #292929;&quot;&gt; &amp;nbsp; &lt;/span&gt;&lt;span style=&quot;color: #001080;&quot;&gt;main&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="jPp7AaR7GWy1GO26mgqh-21" value="&lt;div style=&quot;color: #292929;background-color: #ffffff;font-family: Consolas, &#39;Courier New&#39;, monospace;font-weight: normal;font-size: 14px;line-height: 19px;white-space: pre;&quot;&gt;&lt;div&gt;&lt;span style=&quot;color: #515151;&quot;&gt;# Jump to C code (should not return)&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #292929;&quot;&gt;&amp;nbsp; &amp;nbsp; &lt;/span&gt;&lt;span style=&quot;color: #001080;&quot;&gt;calll&lt;/span&gt;&lt;span style=&quot;color: #292929;&quot;&gt; &amp;nbsp; &lt;/span&gt;&lt;span style=&quot;color: #001080;&quot;&gt;main&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" style="text;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="240" y="540" width="310" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="jPp7AaR7GWy1GO26mgqh-22" value="&lt;div style=&quot;background-color: rgb(255, 255, 255); line-height: 19px;&quot;&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;color: rgb(0, 16, 128); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; font-weight: normal; white-space: pre;&quot;&gt;.byte&lt;/span&gt;&lt;span style=&quot;color: rgb(41, 41, 41); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; font-weight: normal; white-space: pre;&quot;&gt; &amp;nbsp; &lt;/span&gt;&lt;span style=&quot;color: rgb(9, 109, 72); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; font-weight: normal; white-space: pre;&quot;&gt;0xeb&lt;/span&gt;&lt;span style=&quot;color: rgb(41, 41, 41); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; font-weight: normal; white-space: pre;&quot;&gt; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;/span&gt;&lt;span style=&quot;color: rgb(81, 81, 81); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; font-weight: normal; white-space: pre;&quot;&gt;# short (2-byte) jump，&lt;/span&gt;&lt;font face=&quot;Consolas, Courier New, monospace&quot; color=&quot;#515151&quot;&gt;&lt;span style=&quot;font-size: 14px; white-space: pre;&quot;&gt;jmp的opcode是0xeb&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;color: rgb(0, 16, 128); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; font-weight: normal; white-space: pre;&quot;&gt;.byte&lt;/span&gt;&lt;span style=&quot;color: rgb(41, 41, 41); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; font-weight: normal; white-space: pre;&quot;&gt; &amp;nbsp; &lt;/span&gt;&lt;span style=&quot;color: rgb(0, 16, 128); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; font-weight: normal; white-space: pre;&quot;&gt;start_of_setup&lt;/span&gt;&lt;span style=&quot;color: rgb(9, 109, 72); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; font-weight: normal; white-space: pre;&quot;&gt;-1&lt;/span&gt;&lt;span style=&quot;color: rgb(0, 16, 128); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; font-weight: normal; white-space: pre;&quot;&gt;f &lt;/span&gt;&lt;font face=&quot;Consolas, Courier New, monospace&quot; color=&quot;#001080&quot;&gt;&lt;span style=&quot;font-size: 14px; white-space: pre;&quot;&gt;跳转到start_of_setup代码段&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;/div&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="jPp7AaR7GWy1GO26mgqh-22" value="&lt;div style=&quot;background-color: rgb(255, 255, 255); line-height: 19px;&quot;&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;color: rgb(0, 16, 128); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; font-weight: normal; white-space: pre;&quot;&gt;.byte&lt;/span&gt;&lt;span style=&quot;color: rgb(41, 41, 41); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; font-weight: normal; white-space: pre;&quot;&gt; &amp;nbsp; &lt;/span&gt;&lt;span style=&quot;color: rgb(9, 109, 72); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; font-weight: normal; white-space: pre;&quot;&gt;0xeb&lt;/span&gt;&lt;span style=&quot;color: rgb(41, 41, 41); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; font-weight: normal; white-space: pre;&quot;&gt; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;/span&gt;&lt;span style=&quot;color: rgb(81, 81, 81); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; font-weight: normal; white-space: pre;&quot;&gt;# short (2-byte) jump，&lt;/span&gt;&lt;font face=&quot;Consolas, Courier New, monospace&quot; color=&quot;#515151&quot;&gt;&lt;span style=&quot;font-size: 14px; white-space: pre;&quot;&gt;jmp的opcode是0xeb&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;color: rgb(0, 16, 128); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; font-weight: normal; white-space: pre;&quot;&gt;.byte&lt;/span&gt;&lt;span style=&quot;color: rgb(41, 41, 41); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; font-weight: normal; white-space: pre;&quot;&gt; &amp;nbsp; &lt;/span&gt;&lt;span style=&quot;color: rgb(0, 16, 128); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; font-weight: normal; white-space: pre;&quot;&gt;start_of_setup&lt;/span&gt;&lt;span style=&quot;color: rgb(9, 109, 72); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; font-weight: normal; white-space: pre;&quot;&gt;-1&lt;/span&gt;&lt;span style=&quot;color: rgb(0, 16, 128); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; font-weight: normal; white-space: pre;&quot;&gt;f &lt;/span&gt;&lt;font face=&quot;Consolas, Courier New, monospace&quot; color=&quot;#001080&quot;&gt;&lt;span style=&quot;font-size: 14px; white-space: pre;&quot;&gt;跳转到start_of_setup代码段&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;/div&gt;" style="text;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="230" y="290" width="500" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="jPp7AaR7GWy1GO26mgqh-23" value="&lt;span style=&quot;font-weight: 700;&quot;&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;arch/x86/boot/main.c&lt;/font&gt;&lt;/span&gt;" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="jPp7AaR7GWy1GO26mgqh-23" value="&lt;span style=&quot;font-weight: 700;&quot;&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;arch/x86/boot/main.c&lt;/font&gt;&lt;/span&gt;" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="800" y="90" width="290" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="jPp7AaR7GWy1GO26mgqh-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="jPp7AaR7GWy1GO26mgqh-24" target="jPp7AaR7GWy1GO26mgqh-25">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="jPp7AaR7GWy1GO26mgqh-24" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;main&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" vertex="1" parent="1">
+        <mxCell id="jPp7AaR7GWy1GO26mgqh-24" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;main&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" parent="1" vertex="1">
           <mxGeometry x="820" y="170" width="350" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="jPp7AaR7GWy1GO26mgqh-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="jPp7AaR7GWy1GO26mgqh-25" target="jPp7AaR7GWy1GO26mgqh-30">
+        <mxCell id="jPp7AaR7GWy1GO26mgqh-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="jPp7AaR7GWy1GO26mgqh-25" target="jPp7AaR7GWy1GO26mgqh-30" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="jPp7AaR7GWy1GO26mgqh-25" value="copy_boot_params" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="jPp7AaR7GWy1GO26mgqh-25" value="copy_boot_params" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="820" y="320" width="350" height="220" as="geometry" />
         </mxCell>
-        <mxCell id="jPp7AaR7GWy1GO26mgqh-26" value="将启动参数拷贝到zeropage" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="jPp7AaR7GWy1GO26mgqh-25">
+        <mxCell id="jPp7AaR7GWy1GO26mgqh-26" value="将启动参数拷贝到zeropage" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="jPp7AaR7GWy1GO26mgqh-25" vertex="1">
           <mxGeometry y="40" width="170" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="jPp7AaR7GWy1GO26mgqh-28" value="函数将内核设置信息拷贝到boot_praams结构的相应字段，boot_params结构中包含struct setup_header_hdr字段。这个结构包含了linux boot protocol中定义的相同的字段，并且由boot loader填写留在内核编译的时候copy_boot_params完成两个工作：&lt;div&gt;1、将header.S中定义的hdr结构中的内容拷贝到boot_params结构的字段struct setup_header hdr中。&lt;/div&gt;&lt;div&gt;2、如何内核是通过老的命令行协议已婚性起来的，那么就更新内核的命令行指针&lt;/div&gt;" style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="jPp7AaR7GWy1GO26mgqh-25">
+        <mxCell id="jPp7AaR7GWy1GO26mgqh-28" value="函数将内核设置信息拷贝到boot_praams结构的相应字段，boot_params结构中包含struct setup_header_hdr字段。这个结构包含了linux boot protocol中定义的相同的字段，并且由boot loader填写留在内核编译的时候copy_boot_params完成两个工作：&lt;div&gt;1、将header.S中定义的hdr结构中的内容拷贝到boot_params结构的字段struct setup_header hdr中。&lt;/div&gt;&lt;div&gt;2、如何内核是通过老的命令行协议已婚性起来的，那么就更新内核的命令行指针&lt;/div&gt;" style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="jPp7AaR7GWy1GO26mgqh-25" vertex="1">
           <mxGeometry x="10" y="70" width="330" height="130" as="geometry" />
         </mxCell>
-        <mxCell id="jPp7AaR7GWy1GO26mgqh-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="jPp7AaR7GWy1GO26mgqh-30" target="jPp7AaR7GWy1GO26mgqh-35">
+        <mxCell id="jPp7AaR7GWy1GO26mgqh-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="jPp7AaR7GWy1GO26mgqh-30" target="jPp7AaR7GWy1GO26mgqh-35" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="jPp7AaR7GWy1GO26mgqh-30" value="console_init" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="jPp7AaR7GWy1GO26mgqh-30" value="console_init" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="820" y="620" width="350" height="90" as="geometry" />
         </mxCell>
-        <mxCell id="jPp7AaR7GWy1GO26mgqh-31" value="arch\x86\boot\early_serial_console.c" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="jPp7AaR7GWy1GO26mgqh-30">
+        <mxCell id="jPp7AaR7GWy1GO26mgqh-31" value="arch\x86\boot\early_serial_console.c" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="jPp7AaR7GWy1GO26mgqh-30" vertex="1">
           <mxGeometry x="10" y="30" width="220" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="jPp7AaR7GWy1GO26mgqh-35" value="init_heap" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="n0Vx_WlOkcHuKILNx8sB-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="jPp7AaR7GWy1GO26mgqh-35" target="jPp7AaR7GWy1GO26mgqh-39">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jPp7AaR7GWy1GO26mgqh-35" value="init_heap" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="820" y="790" width="350" height="90" as="geometry" />
         </mxCell>
-        <mxCell id="jPp7AaR7GWy1GO26mgqh-37" value="堆栈和bss段在header.S中被初始化之后，内核需要初始化全局堆。&lt;div&gt;全局堆初始化后，才能使用GET_HEAP方法&lt;/div&gt;" style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="jPp7AaR7GWy1GO26mgqh-35">
+        <mxCell id="jPp7AaR7GWy1GO26mgqh-37" value="堆栈和bss段在header.S中被初始化之后，内核需要初始化全局堆。&lt;div&gt;全局堆初始化后，才能使用GET_HEAP方法&lt;/div&gt;" style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="jPp7AaR7GWy1GO26mgqh-35" vertex="1">
           <mxGeometry x="10" y="20" width="330" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="jPp7AaR7GWy1GO26mgqh-45" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="jPp7AaR7GWy1GO26mgqh-39" target="jPp7AaR7GWy1GO26mgqh-42">
+        <mxCell id="jPp7AaR7GWy1GO26mgqh-45" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="jPp7AaR7GWy1GO26mgqh-39" target="jPp7AaR7GWy1GO26mgqh-42" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="jPp7AaR7GWy1GO26mgqh-39" value="validate_cpu" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="jPp7AaR7GWy1GO26mgqh-39" value="validate_cpu" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="820" y="930" width="350" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="jPp7AaR7GWy1GO26mgqh-41" value="arch\x86\boot\cpu.c" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="jPp7AaR7GWy1GO26mgqh-39">
+        <mxCell id="jPp7AaR7GWy1GO26mgqh-41" value="arch\x86\boot\cpu.c" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="jPp7AaR7GWy1GO26mgqh-39" vertex="1">
           <mxGeometry y="30" width="130" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="jPp7AaR7GWy1GO26mgqh-40" value="检查CPU是否支持" style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="jPp7AaR7GWy1GO26mgqh-39">
+        <mxCell id="jPp7AaR7GWy1GO26mgqh-40" value="检查CPU是否支持" style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="jPp7AaR7GWy1GO26mgqh-39" vertex="1">
           <mxGeometry x="10" y="60" width="330" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="jPp7AaR7GWy1GO26mgqh-50" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="jPp7AaR7GWy1GO26mgqh-42" target="jPp7AaR7GWy1GO26mgqh-46">
+        <mxCell id="jPp7AaR7GWy1GO26mgqh-50" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="jPp7AaR7GWy1GO26mgqh-42" target="jPp7AaR7GWy1GO26mgqh-46" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="jPp7AaR7GWy1GO26mgqh-42" value="set_bios_mode" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="jPp7AaR7GWy1GO26mgqh-42" value="set_bios_mode" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="820" y="1100" width="350" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="jPp7AaR7GWy1GO26mgqh-46" value="detect_memory" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="jPp7AaR7GWy1GO26mgqh-46" value="detect_memory" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="820" y="1230" width="350" height="130" as="geometry" />
         </mxCell>
-        <mxCell id="jPp7AaR7GWy1GO26mgqh-47" value="使用detect_memory方法进行内存侦测，以得到系统当前内存的使用分布。包括0xe820（获取全部内存分配）、0xe801和0xe88（获取临近内存大小）&lt;div&gt;内存侦测结束后，内存分配信息将被希尔芙到e820entry（820模式）数据组中，并在在dmesg中可以看到这个数组的内容&lt;/div&gt;" style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="jPp7AaR7GWy1GO26mgqh-46">
+        <mxCell id="jPp7AaR7GWy1GO26mgqh-47" value="使用detect_memory方法进行内存侦测，以得到系统当前内存的使用分布。包括0xe820（获取全部内存分配）、0xe801和0xe88（获取临近内存大小）&lt;div&gt;内存侦测结束后，内存分配信息将被希尔芙到e820entry（820模式）数据组中，并在在dmesg中可以看到这个数组的内容&lt;/div&gt;" style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="jPp7AaR7GWy1GO26mgqh-46" vertex="1">
           <mxGeometry x="10" y="30" width="330" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="jPp7AaR7GWy1GO26mgqh-64" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="jPp7AaR7GWy1GO26mgqh-48" target="jPp7AaR7GWy1GO26mgqh-52">
+        <mxCell id="jPp7AaR7GWy1GO26mgqh-64" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="jPp7AaR7GWy1GO26mgqh-48" target="jPp7AaR7GWy1GO26mgqh-52" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="jPp7AaR7GWy1GO26mgqh-48" value="keyboard_init" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="jPp7AaR7GWy1GO26mgqh-48" value="keyboard_init" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="820" y="1440" width="350" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="jPp7AaR7GWy1GO26mgqh-49" value="键盘初始化" style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="jPp7AaR7GWy1GO26mgqh-48">
+        <mxCell id="jPp7AaR7GWy1GO26mgqh-49" value="键盘初始化" style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="jPp7AaR7GWy1GO26mgqh-48" vertex="1">
           <mxGeometry x="10" y="30" width="330" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="jPp7AaR7GWy1GO26mgqh-51" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="jPp7AaR7GWy1GO26mgqh-47" target="jPp7AaR7GWy1GO26mgqh-48">
+        <mxCell id="jPp7AaR7GWy1GO26mgqh-51" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="jPp7AaR7GWy1GO26mgqh-47" target="jPp7AaR7GWy1GO26mgqh-48" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="jPp7AaR7GWy1GO26mgqh-69" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="jPp7AaR7GWy1GO26mgqh-56" target="jPp7AaR7GWy1GO26mgqh-58">
+        <mxCell id="jPp7AaR7GWy1GO26mgqh-69" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="jPp7AaR7GWy1GO26mgqh-56" target="jPp7AaR7GWy1GO26mgqh-58" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="jPp7AaR7GWy1GO26mgqh-56" value="query_apm_bios" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="jPp7AaR7GWy1GO26mgqh-56" value="query_apm_bios" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="820" y="1910" width="350" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="jPp7AaR7GWy1GO26mgqh-57" value="&lt;div&gt;调用query_apm_bios方法从BIOS获取高级电源管理信息&lt;/div&gt;" style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="jPp7AaR7GWy1GO26mgqh-56">
+        <mxCell id="jPp7AaR7GWy1GO26mgqh-57" value="&lt;div&gt;调用query_apm_bios方法从BIOS获取高级电源管理信息&lt;/div&gt;" style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="jPp7AaR7GWy1GO26mgqh-56" vertex="1">
           <mxGeometry x="10" y="30" width="330" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="jPp7AaR7GWy1GO26mgqh-72" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="jPp7AaR7GWy1GO26mgqh-58" target="jPp7AaR7GWy1GO26mgqh-70">
+        <mxCell id="jPp7AaR7GWy1GO26mgqh-72" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="jPp7AaR7GWy1GO26mgqh-58" target="jPp7AaR7GWy1GO26mgqh-70" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="jPp7AaR7GWy1GO26mgqh-58" value="query_edd" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="jPp7AaR7GWy1GO26mgqh-58" value="query_edd" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="820" y="2060" width="350" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="jPp7AaR7GWy1GO26mgqh-59" value="&lt;div&gt;从BIOS中查询Enhanced DISK Drive信息&lt;/div&gt;" style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="jPp7AaR7GWy1GO26mgqh-58">
+        <mxCell id="jPp7AaR7GWy1GO26mgqh-59" value="&lt;div&gt;从BIOS中查询Enhanced DISK Drive信息&lt;/div&gt;" style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="jPp7AaR7GWy1GO26mgqh-58" vertex="1">
           <mxGeometry x="10" y="30" width="330" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="jPp7AaR7GWy1GO26mgqh-67" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="jPp7AaR7GWy1GO26mgqh-52" target="jPp7AaR7GWy1GO26mgqh-54">
+        <mxCell id="jPp7AaR7GWy1GO26mgqh-67" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="jPp7AaR7GWy1GO26mgqh-52" target="jPp7AaR7GWy1GO26mgqh-54" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="jPp7AaR7GWy1GO26mgqh-52" value="query_mca" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="jPp7AaR7GWy1GO26mgqh-52" value="query_mca" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="820" y="1540" width="350" height="130" as="geometry" />
         </mxCell>
-        <mxCell id="jPp7AaR7GWy1GO26mgqh-53" value="&lt;div&gt;query_mca方法调用0x15中断来获取机器的型号信息、BIOS版本以及其他一些硬件相关的属性。&lt;/div&gt;&lt;div&gt;query_mca代码的最后，代码将es:bx指向的内存地址的内容拷贝到boot_params.sys_desc_table&lt;/div&gt;" style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="jPp7AaR7GWy1GO26mgqh-52">
+        <mxCell id="jPp7AaR7GWy1GO26mgqh-53" value="&lt;div&gt;query_mca方法调用0x15中断来获取机器的型号信息、BIOS版本以及其他一些硬件相关的属性。&lt;/div&gt;&lt;div&gt;query_mca代码的最后，代码将es:bx指向的内存地址的内容拷贝到boot_params.sys_desc_table&lt;/div&gt;" style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="jPp7AaR7GWy1GO26mgqh-52" vertex="1">
           <mxGeometry x="10" y="30" width="330" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="jPp7AaR7GWy1GO26mgqh-70" value="set_video" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="n0Vx_WlOkcHuKILNx8sB-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="jPp7AaR7GWy1GO26mgqh-70" target="jPp7AaR7GWy1GO26mgqh-75">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jPp7AaR7GWy1GO26mgqh-70" value="set_video" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="820" y="2210" width="350" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="jPp7AaR7GWy1GO26mgqh-71" value="&lt;div&gt;set_video函数从boot_params.hdr中获取显示模式设置（vid_mode）&lt;/div&gt;" style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="jPp7AaR7GWy1GO26mgqh-70">
+        <mxCell id="jPp7AaR7GWy1GO26mgqh-71" value="&lt;div&gt;set_video函数从boot_params.hdr中获取显示模式设置（vid_mode）&lt;/div&gt;" style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="jPp7AaR7GWy1GO26mgqh-70" vertex="1">
           <mxGeometry x="10" y="30" width="330" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="jPp7AaR7GWy1GO26mgqh-73" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;labelPosition=left;verticalLabelPosition=middle;align=right;verticalAlign=middle;" vertex="1" parent="1">
+        <mxCell id="jPp7AaR7GWy1GO26mgqh-73" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;labelPosition=left;verticalLabelPosition=middle;align=right;verticalAlign=middle;" parent="1" vertex="1">
           <mxGeometry x="770" y="1530" width="20" height="650" as="geometry" />
         </mxCell>
-        <mxCell id="jPp7AaR7GWy1GO26mgqh-61" value="获取系统信息" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="jPp7AaR7GWy1GO26mgqh-61" value="获取系统信息" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="730" y="1840" width="10" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="jPp7AaR7GWy1GO26mgqh-75" value="go_to_protected_mode" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="jPp7AaR7GWy1GO26mgqh-75" value="go_to_protected_mode" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="820" y="2350" width="350" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="n0Vx_WlOkcHuKILNx8sB-2" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;go_to_protected_mode&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="1340" y="170" width="350" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="n0Vx_WlOkcHuKILNx8sB-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="n0Vx_WlOkcHuKILNx8sB-3" target="n0Vx_WlOkcHuKILNx8sB-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n0Vx_WlOkcHuKILNx8sB-3" value="realmode_switch_hook" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1340" y="320" width="350" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="n0Vx_WlOkcHuKILNx8sB-4" value="&lt;div style=&quot;color: rgb(41, 41, 41); background-color: rgb(255, 255, 255); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 19px; white-space-collapse: preserve;&quot;&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;color: #0f4a85;&quot;&gt;asm&lt;/span&gt; &lt;span style=&quot;color: #0f4a85;&quot;&gt;volatile&lt;/span&gt;(&lt;span style=&quot;color: #0f4a85;&quot;&gt;&quot;&lt;/span&gt;&lt;span style=&quot;color: #001080;&quot;&gt;cli&lt;/span&gt;&lt;span style=&quot;color: #0f4a85;&quot;&gt;&quot;&lt;/span&gt;); 清除中断标志&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;color: rgb(94, 44, 188);&quot;&gt;outb&lt;/span&gt;(&lt;span style=&quot;color: rgb(9, 109, 72);&quot;&gt;0x80&lt;/span&gt;, &lt;span style=&quot;color: rgb(9, 109, 72);&quot;&gt;0x70&lt;/span&gt;);&lt;span style=&quot;color: rgb(81, 81, 81);&quot;&gt; /* Disable NMI */&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #5e2cbc;&quot;&gt;io_delay&lt;/span&gt;();&lt;/div&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="n0Vx_WlOkcHuKILNx8sB-3">
+          <mxGeometry x="10" y="30" width="290" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="n0Vx_WlOkcHuKILNx8sB-6" value="在NMI中断被禁止后，通过写0x80进CMOS地址寄存器0x70，然后调用io_delay函数等待I/O操作完成" style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="n0Vx_WlOkcHuKILNx8sB-3">
+          <mxGeometry y="110" width="335" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="n0Vx_WlOkcHuKILNx8sB-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="n0Vx_WlOkcHuKILNx8sB-8" target="n0Vx_WlOkcHuKILNx8sB-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n0Vx_WlOkcHuKILNx8sB-8" value="enable_a20" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1340" y="570" width="350" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="n0Vx_WlOkcHuKILNx8sB-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="n0Vx_WlOkcHuKILNx8sB-12" target="n0Vx_WlOkcHuKILNx8sB-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n0Vx_WlOkcHuKILNx8sB-12" value="reset_processor" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1340" y="740" width="350" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="n0Vx_WlOkcHuKILNx8sB-14" value="&lt;div style=&quot;background-color: rgb(255, 255, 255); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 19px; white-space-collapse: preserve;&quot;&gt;&lt;div style=&quot;&quot;&gt;&lt;font color=&quot;#0f4a85&quot;&gt;outb(0, 0xf0);&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;font color=&quot;#0f4a85&quot;&gt;outb(0,0xf1);  通过将0写入I/O端口0xf0和0xf1&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;font color=&quot;#0f4a85&quot;&gt;               实现复位数字协处理器&lt;/font&gt;&lt;/div&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="n0Vx_WlOkcHuKILNx8sB-12">
+          <mxGeometry x="10" y="30" width="340" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="n0Vx_WlOkcHuKILNx8sB-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="n0Vx_WlOkcHuKILNx8sB-15" target="n0Vx_WlOkcHuKILNx8sB-25">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n0Vx_WlOkcHuKILNx8sB-15" value="make_all_interrupts" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1340" y="920" width="350" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="n0Vx_WlOkcHuKILNx8sB-16" value="&lt;div style=&quot;background-color: rgb(255, 255, 255); line-height: 19px;&quot;&gt;&lt;div style=&quot;&quot;&gt;&lt;font face=&quot;Consolas, Courier New, monospace&quot; color=&quot;#0f4a85&quot;&gt;&lt;span style=&quot;font-size: 14px; white-space-collapse: preserve;&quot;&gt;outb(0xff, 0xa1);&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 10px;&quot; face=&quot;Consolas, Courier New, monospace&quot; color=&quot;#0f4a85&quot;&gt;&lt;span style=&quot;white-space-collapse: preserve;&quot;&gt;/* Mask all interrupts on the secondary PIC */&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;font face=&quot;Consolas, Courier New, monospace&quot; color=&quot;#0f4a85&quot;&gt;&lt;span style=&quot;font-size: 14px; white-space-collapse: preserve;&quot;&gt;io_delay();&lt;br&gt;outb(0xfb, 0x21);&#x9;&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;font face=&quot;Consolas, Courier New, monospace&quot; color=&quot;#0f4a85&quot;&gt;&lt;span style=&quot;white-space-collapse: preserve;&quot;&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;/* Mask all but cascade on the primary PIC */&lt;br&gt;&lt;/font&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;io_delay();&lt;/span&gt;&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;/div&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="n0Vx_WlOkcHuKILNx8sB-15">
+          <mxGeometry x="10" y="25" width="280" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="n0Vx_WlOkcHuKILNx8sB-20" value="屏蔽中断控制器（PIC：Programmable Interrupt Controller）的所有中断，和主终端上除IRQ2异味的所有中断（IRQ2是主中断控制器上的级联中断，所有中断控制器的中断将通过这个级联中断报告给CPU）" style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="n0Vx_WlOkcHuKILNx8sB-15">
+          <mxGeometry x="10" y="170" width="330" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="n0Vx_WlOkcHuKILNx8sB-23" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;labelPosition=left;verticalLabelPosition=middle;align=right;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="1300" y="320" width="20" height="830" as="geometry" />
+        </mxCell>
+        <mxCell id="n0Vx_WlOkcHuKILNx8sB-24" value="切保护模式准备工作" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1265" y="730" width="10" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="n0Vx_WlOkcHuKILNx8sB-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="n0Vx_WlOkcHuKILNx8sB-25" target="n0Vx_WlOkcHuKILNx8sB-26">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n0Vx_WlOkcHuKILNx8sB-25" value="setup_idt" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1340" y="1210" width="350" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="n0Vx_WlOkcHuKILNx8sB-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="n0Vx_WlOkcHuKILNx8sB-26" target="n0Vx_WlOkcHuKILNx8sB-27">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n0Vx_WlOkcHuKILNx8sB-26" value="setup_gdt" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1340" y="1310" width="350" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="n0Vx_WlOkcHuKILNx8sB-27" value="protected_mode_jump" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1340" y="1440" width="350" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="n0Vx_WlOkcHuKILNx8sB-28" value="arch\x86\boot\pmjump.S" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="n0Vx_WlOkcHuKILNx8sB-27">
+          <mxGeometry y="30" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="n0Vx_WlOkcHuKILNx8sB-29" value="接受如下两个参数：&lt;div&gt;- 保护模式代码的入口&lt;/div&gt;&lt;div&gt;- boot_parms结构的地址&lt;/div&gt;&lt;div&gt;通过设置CR0寄存器相应的位是CPU进入保护模式&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;span style=&quot;white-space: normal;&quot;&gt;movl&lt;span style=&quot;white-space:pre&quot;&gt;&#x9;&lt;/span&gt;%cr0, %edx&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: normal;&quot;&gt;orb&lt;span style=&quot;white-space:pre&quot;&gt;&#x9;&lt;/span&gt;$X86_CR0_PE, %dl&lt;span style=&quot;white-space:pre&quot;&gt;&#x9;&lt;/span&gt;# Protected mode&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: normal;&quot;&gt;movl&lt;span style=&quot;white-space:pre&quot;&gt;&#x9;&lt;/span&gt;%edx, %cr0&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;在进入保护模式之后，通过一个长跳转进入32位代码&lt;/div&gt;&lt;div&gt;jmpl&lt;span style=&quot;white-space:pre&quot;&gt;&#x9;&lt;/span&gt;*%eax&lt;span style=&quot;white-space:pre&quot;&gt;&#x9;&#x9;&#x9;&lt;/span&gt;# Jump to the 32-bit entrypoint&lt;br&gt;&lt;/div&gt;&lt;div&gt;这段代码将跳转到arch\x86\boot\compressed\head_64.S&lt;/div&gt;" style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="n0Vx_WlOkcHuKILNx8sB-27">
+          <mxGeometry x="5" y="60" width="330" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="n0Vx_WlOkcHuKILNx8sB-33" value="&lt;span style=&quot;font-size: 20px;&quot;&gt;&lt;b&gt;arch\x86\boot\pm.c&lt;/b&gt;&lt;/span&gt;" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1320" y="90" width="290" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="n0Vx_WlOkcHuKILNx8sB-34" value="&lt;span style=&quot;font-size: 20px;&quot;&gt;&lt;b&gt;arch\x86\boot\compressed\head_64.S&lt;/b&gt;&lt;/span&gt;" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1830" y="90" width="290" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

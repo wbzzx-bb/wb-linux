@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-06-07T03:46:16.147Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36" etag="sddR4c9lVlAi_rNiz2w2" version="24.5.1" type="github">
+<mxfile host="app.diagrams.net" modified="2024-06-07T06:33:02.478Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36" etag="zr87alT_0y7-k-ydXyl2" version="24.5.1" type="github">
   <diagram id="wFE0QG_FPsp0jaGvCLVb" name="Page-1">
     <mxGraphModel dx="1728" dy="922" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -414,8 +414,23 @@
         <mxCell id="xLDLfK03S4XXTLqaUx2n-41" value="copy_bootdata" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="3370" y="740" width="350" height="90" as="geometry" />
         </mxCell>
-        <mxCell id="xLDLfK03S4XXTLqaUx2n-42" value="通过设置并加载中断描述符表，能够让CPU在发生中断时做出相应的动作" style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="xLDLfK03S4XXTLqaUx2n-41">
+        <mxCell id="xLDLfK03S4XXTLqaUx2n-42" value="将real_mod_data拷贝进boot_params；然后将boot_params的commandline的64位地址拷贝到boot_command_line中。这样我们就得到了内核命令行和boot_params结构体" style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="xLDLfK03S4XXTLqaUx2n-41">
           <mxGeometry x="10" y="30" width="330" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="xLDLfK03S4XXTLqaUx2n-43" value="load_ucode_bsp" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="3370" y="890" width="350" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="xLDLfK03S4XXTLqaUx2n-44" value="加载处理器微码" style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="xLDLfK03S4XXTLqaUx2n-43">
+          <mxGeometry x="10" y="30" width="330" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="xLDLfK03S4XXTLqaUx2n-45" value="检查console_loglevel" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="3370" y="1030" width="350" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="xLDLfK03S4XXTLqaUx2n-47" value="初始化内存页" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="3370" y="1170" width="350" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="xLDLfK03S4XXTLqaUx2n-48" value="&lt;div&gt;对初期页表进行一些设置以便在初始化内核过程中使用；&lt;/div&gt;&lt;div&gt;将初期页表中的大部分清零，只保留内核高地址映射&lt;/div&gt;" style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="xLDLfK03S4XXTLqaUx2n-47">
+          <mxGeometry x="6" y="20" width="330" height="70" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

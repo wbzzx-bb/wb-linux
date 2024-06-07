@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-06-07T03:34:32.780Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36" etag="ew3ioJVxU7-HmeYE6EAl" version="24.5.1" type="github">
+<mxfile host="app.diagrams.net" modified="2024-06-07T03:46:16.147Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36" etag="sddR4c9lVlAi_rNiz2w2" version="24.5.1" type="github">
   <diagram id="wFE0QG_FPsp0jaGvCLVb" name="Page-1">
     <mxGraphModel dx="1728" dy="922" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -394,10 +394,28 @@
           <mxGeometry x="3370" y="170" width="350" height="60" as="geometry" />
         </mxCell>
         <mxCell id="xLDLfK03S4XXTLqaUx2n-35" value="前置检查" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="3370" y="320" width="350" height="140" as="geometry" />
+          <mxGeometry x="3370" y="320" width="350" height="90" as="geometry" />
         </mxCell>
         <mxCell id="xLDLfK03S4XXTLqaUx2n-36" value="1、模块的虚拟地址不能低于text段基地址&lt;div&gt;2、模块的内核text段的空间不能小于内核镜像大小等&lt;/div&gt;" style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="xLDLfK03S4XXTLqaUx2n-35">
-          <mxGeometry x="10" y="40" width="330" height="70" as="geometry" />
+          <mxGeometry x="10" y="30" width="330" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="xLDLfK03S4XXTLqaUx2n-37" value="reset_eatly_page_tables" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="3370" y="460" width="350" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="xLDLfK03S4XXTLqaUx2n-38" value="重置所有的全局页目录项，同时项cr3中重新写入全局页目录表的地址。后面将重新建立页表" style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="xLDLfK03S4XXTLqaUx2n-37">
+          <mxGeometry x="10" y="30" width="330" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="xLDLfK03S4XXTLqaUx2n-39" value="设置并加载IDT" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="3370" y="590" width="350" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="xLDLfK03S4XXTLqaUx2n-40" value="通过设置并加载中断描述符表，能够让CPU在发生中断时做出相应的动作" style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="xLDLfK03S4XXTLqaUx2n-39">
+          <mxGeometry x="10" y="30" width="330" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="xLDLfK03S4XXTLqaUx2n-41" value="copy_bootdata" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="3370" y="740" width="350" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="xLDLfK03S4XXTLqaUx2n-42" value="通过设置并加载中断描述符表，能够让CPU在发生中断时做出相应的动作" style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="xLDLfK03S4XXTLqaUx2n-41">
+          <mxGeometry x="10" y="30" width="330" height="50" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

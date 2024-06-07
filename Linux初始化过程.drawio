@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-06-07T07:47:00.947Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36" etag="AY4A-wK5YUv47rMvKCA4" version="24.5.1" type="github">
+<mxfile host="app.diagrams.net" modified="2024-06-07T08:13:52.209Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36" etag="BF_qGpZvv1A5CQhgj2yi" version="24.5.1" type="github">
   <diagram id="wFE0QG_FPsp0jaGvCLVb" name="Page-1">
     <mxGraphModel dx="1430" dy="763" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -554,6 +554,60 @@
         </mxCell>
         <mxCell id="xLDLfK03S4XXTLqaUx2n-94" value="&lt;span style=&quot;font-size: 20px;&quot;&gt;&lt;b&gt;arch\x86\kernel\setup.c&lt;/b&gt;&lt;/span&gt;" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="4400" y="80" width="290" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="xLDLfK03S4XXTLqaUx2n-95" value="memblock_reserve" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="4370" y="310" width="350" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="xLDLfK03S4XXTLqaUx2n-96" value="解析内核的段，对内存页进行分配" style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=top;whiteSpace=wrap;rounded=0;" vertex="1" parent="xLDLfK03S4XXTLqaUx2n-95">
+          <mxGeometry x="7" y="25" width="330" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="xLDLfK03S4XXTLqaUx2n-97" value="early_reserve_initrd" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="4370" y="450" width="350" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="xLDLfK03S4XXTLqaUx2n-98" value="保留替换内核的text和data段用来初始化initrd，根文件系统就是通过这种方式进行初始化" style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=top;whiteSpace=wrap;rounded=0;" vertex="1" parent="xLDLfK03S4XXTLqaUx2n-97">
+          <mxGeometry x="7" y="25" width="330" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="xLDLfK03S4XXTLqaUx2n-99" value="olpc_ofw_detect" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="4370" y="610" width="350" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="xLDLfK03S4XXTLqaUx2n-100" value="检测系统是否支持One ：Laptop Per Child support" style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=top;whiteSpace=wrap;rounded=0;" vertex="1" parent="xLDLfK03S4XXTLqaUx2n-99">
+          <mxGeometry x="7" y="25" width="330" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="xLDLfK03S4XXTLqaUx2n-101" value="early_trap_init" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="4370" y="750" width="350" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="xLDLfK03S4XXTLqaUx2n-102" value="初始化调试功能和int3中断" style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=top;whiteSpace=wrap;rounded=0;" vertex="1" parent="xLDLfK03S4XXTLqaUx2n-101">
+          <mxGeometry x="7" y="25" width="330" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="xLDLfK03S4XXTLqaUx2n-103" value="early_cpu_init" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="4370" y="890" width="350" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="xLDLfK03S4XXTLqaUx2n-104" value="负责收集CPU和供应商的信息" style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=top;whiteSpace=wrap;rounded=0;" vertex="1" parent="xLDLfK03S4XXTLqaUx2n-103">
+          <mxGeometry x="7" y="25" width="330" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="xLDLfK03S4XXTLqaUx2n-105" value="early_ioremap_init" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="4370" y="1020" width="350" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="xLDLfK03S4XXTLqaUx2n-106" value="通常有两种实现与设备通信的方式：&lt;div&gt;&amp;nbsp; &amp;nbsp;- I/O端口&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp;- 设备内存&lt;/div&gt;&lt;div&gt;我们在linux内核启动过程中见过第一种方法（通过outb/inb指令实现&lt;span style=&quot;background-color: initial;&quot;&gt;）。第二种方法是把I/O的物理地址映射到虚拟地址。当CPU读取到一段物理地址时，它可以读取到映射了I/O设备的物理RAM区域。&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;early_ioremap_init在正常的像ioremap这样的映射函数可用之前，把I/O内存映射到内核地址空间以方便读取&lt;/span&gt;&lt;/div&gt;" style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=top;whiteSpace=wrap;rounded=0;" vertex="1" parent="xLDLfK03S4XXTLqaUx2n-105">
+          <mxGeometry x="7" y="25" width="330" height="145" as="geometry" />
+        </mxCell>
+        <mxCell id="xLDLfK03S4XXTLqaUx2n-107" value="获取根设备的主次设备号" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="4370" y="1230" width="350" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="xLDLfK03S4XXTLqaUx2n-108" value="&lt;div&gt;获取根设备的主次设备号后，initrd会通过do_mount_root函数挂载到这个根设备上。其中注射笔号用来识别和这个设备有关的驱动，次设备号用来表示使用该驱动的各设备。&lt;/div&gt;" style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=top;whiteSpace=wrap;rounded=0;" vertex="1" parent="xLDLfK03S4XXTLqaUx2n-107">
+          <mxGeometry x="7" y="25" width="330" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="xLDLfK03S4XXTLqaUx2n-110" value="显示设置" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="4370" y="1370" width="350" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="xLDLfK03S4XXTLqaUx2n-111" value="&lt;div&gt;设置与显示屏有关的参数（行、列、视频页等），与拓展显示识别数据、视频模式、应道启动器类型等参数&lt;/div&gt;&lt;div&gt;&lt;div style=&quot;color: rgb(41, 41, 41); background-color: rgb(255, 255, 255); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; line-height: 19px; white-space: pre;&quot;&gt;&lt;div style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 8px;&quot;&gt;&lt;span style=&quot;color: rgb(0, 16, 128);&quot;&gt;ROOT_DEV&lt;/span&gt; &lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;=&lt;/span&gt; &lt;span style=&quot;color: rgb(94, 44, 188);&quot;&gt;old_decode_dev&lt;/span&gt;(&lt;span style=&quot;color: rgb(0, 16, 128);&quot;&gt;boot_params&lt;/span&gt;.&lt;span style=&quot;color: rgb(0, 16, 128);&quot;&gt;hdr&lt;/span&gt;.&lt;span style=&quot;color: rgb(0, 16, 128);&quot;&gt;root_dev&lt;/span&gt;);&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 8px;&quot;&gt;&lt;span style=&quot;color: rgb(0, 16, 128);&quot;&gt;screen_info&lt;/span&gt; &lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;=&lt;/span&gt; &lt;span style=&quot;color: rgb(0, 16, 128);&quot;&gt;boot_params&lt;/span&gt;.&lt;span style=&quot;color: rgb(0, 16, 128);&quot;&gt;screen_info&lt;/span&gt;;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 8px;&quot;&gt;&lt;span style=&quot;color: #001080;&quot;&gt;edid_info&lt;/span&gt; &lt;span style=&quot;color: #000000;&quot;&gt;=&lt;/span&gt; &lt;span style=&quot;color: #001080;&quot;&gt;boot_params&lt;/span&gt;.&lt;span style=&quot;color: #001080;&quot;&gt;edid_info&lt;/span&gt;;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;&lt;div style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 8px;&quot;&gt;&lt;span style=&quot;color: #001080;&quot;&gt;saved_video_mode&lt;/span&gt; &lt;span style=&quot;color: #000000;&quot;&gt;=&lt;/span&gt; &lt;span style=&quot;color: #001080;&quot;&gt;boot_params&lt;/span&gt;.&lt;span style=&quot;color: #001080;&quot;&gt;hdr&lt;/span&gt;.&lt;span style=&quot;color: #001080;&quot;&gt;vid_mode&lt;/span&gt;;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 8px;&quot;&gt;&lt;span style=&quot;color: #001080;&quot;&gt;bootloader_type&lt;/span&gt; &lt;span style=&quot;color: #000000;&quot;&gt;=&lt;/span&gt; &lt;span style=&quot;color: #001080;&quot;&gt;boot_params&lt;/span&gt;.&lt;span style=&quot;color: #001080;&quot;&gt;hdr&lt;/span&gt;.&lt;span style=&quot;color: #001080;&quot;&gt;type_of_loader&lt;/span&gt;;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;&lt;div style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 8px;&quot;&gt;&lt;span style=&quot;color: #001080;&quot;&gt;bootloader_version&lt;/span&gt; &amp;nbsp;&lt;span style=&quot;color: #000000;&quot;&gt;=&lt;/span&gt; &lt;span style=&quot;color: #001080;&quot;&gt;bootloader_type&lt;/span&gt; &lt;span style=&quot;color: #000000;&quot;&gt;&amp;amp;&lt;/span&gt; &lt;span style=&quot;color: #096d48;&quot;&gt;0xf&lt;/span&gt;;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 8px;&quot;&gt;&lt;span style=&quot;color: rgb(0, 16, 128);&quot;&gt;bootloader_version&lt;/span&gt; &lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;|=&lt;/span&gt; &lt;span style=&quot;color: rgb(0, 16, 128);&quot;&gt;boot_params&lt;/span&gt;.&lt;span style=&quot;color: rgb(0, 16, 128);&quot;&gt;hdr&lt;/span&gt;.&lt;span style=&quot;color: rgb(0, 16, 128);&quot;&gt;ext_loader_ver&lt;/span&gt; &lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span style=&quot;color: rgb(9, 109, 72);&quot;&gt;4&lt;/span&gt;;&lt;/font&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=top;whiteSpace=wrap;rounded=0;" vertex="1" parent="xLDLfK03S4XXTLqaUx2n-110">
+          <mxGeometry x="7" y="25" width="330" height="185" as="geometry" />
+        </mxCell>
+        <mxCell id="xLDLfK03S4XXTLqaUx2n-112" value="setup_memory_map" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="4370" y="1640" width="350" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="xLDLfK03S4XXTLqaUx2n-113" value="&lt;div&gt;获取根设备的主次设备号后，initrd会通过do_mount_root函数挂载到这个根设备上。其中注射笔号用来识别和这个设备有关的驱动，次设备号用来表示使用该驱动的各设备。&lt;/div&gt;" style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=top;whiteSpace=wrap;rounded=0;" vertex="1" parent="xLDLfK03S4XXTLqaUx2n-112">
+          <mxGeometry x="7" y="25" width="330" height="65" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

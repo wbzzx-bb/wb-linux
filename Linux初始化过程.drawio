@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-06-07T07:00:12.759Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36" etag="-iDGMJ3pwfuR3dfBsAIJ" version="24.5.1" type="github">
+<mxfile host="app.diagrams.net" modified="2024-06-07T07:15:09.061Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36" etag="I81oUlB-sKCyYdKQsgHg" version="24.5.1" type="github">
   <diagram id="wFE0QG_FPsp0jaGvCLVb" name="Page-1">
-    <mxGraphModel dx="1728" dy="922" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1430" dy="763" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -438,6 +438,9 @@
         <mxCell id="xLDLfK03S4XXTLqaUx2n-45" value="检查console_loglevel" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="3370" y="1030" width="350" height="90" as="geometry" />
         </mxCell>
+        <mxCell id="xLDLfK03S4XXTLqaUx2n-57" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="xLDLfK03S4XXTLqaUx2n-47" target="xLDLfK03S4XXTLqaUx2n-55">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="xLDLfK03S4XXTLqaUx2n-47" value="初始化内存页" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="3370" y="1170" width="350" height="90" as="geometry" />
         </mxCell>
@@ -450,11 +453,11 @@
         <mxCell id="xLDLfK03S4XXTLqaUx2n-53" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="xLDLfK03S4XXTLqaUx2n-44" target="xLDLfK03S4XXTLqaUx2n-45">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="xLDLfK03S4XXTLqaUx2n-55" value="x86_64_start_reservations" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="3370" y="1320" width="350" height="90" as="geometry" />
+        <mxCell id="xLDLfK03S4XXTLqaUx2n-55" value="x86_64_start_reservations" style="swimlane;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="3370" y="1320" width="350" height="200" as="geometry" />
         </mxCell>
-        <mxCell id="xLDLfK03S4XXTLqaUx2n-56" value="&lt;div&gt;首先检查boot_params.hdr.version，接下来调用了reserve_ebda_region函数&lt;/div&gt;" style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="xLDLfK03S4XXTLqaUx2n-55">
-          <mxGeometry x="6" y="20" width="330" height="70" as="geometry" />
+        <mxCell id="xLDLfK03S4XXTLqaUx2n-56" value="&lt;div&gt;首先检查boot_params.hdr.version，接下来调用了reserve_ebda_region函数，这个函数为EDBA（Extended BIOS Data Area，扩展BIOS数据区域）预留空间。扩展BIOS预留区域位于常规内存顶部（常规内存&amp;lt;Conventional Memory&amp;gt;是指前640K字节的内存），包含了端口、磁盘参数等数据&lt;/div&gt;&lt;div&gt;探后进入到内核入口处的初始化： &lt;b&gt;&lt;font color=&quot;#ff3333&quot;&gt;start_kernel&lt;/font&gt;&lt;/b&gt;函数&lt;/div&gt;" style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=top;whiteSpace=wrap;rounded=0;" vertex="1" parent="xLDLfK03S4XXTLqaUx2n-55">
+          <mxGeometry x="10" y="30" width="330" height="170" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

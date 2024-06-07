@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-06-07T03:03:58.459Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36" etag="hZXUUN8DZWOgd61ULkbS" version="24.5.1" type="github">
+<mxfile host="app.diagrams.net" modified="2024-06-07T03:06:50.674Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36" etag="pxNj1XaGQrGCg-T0ozCt" version="24.5.1" type="github">
   <diagram id="wFE0QG_FPsp0jaGvCLVb" name="Page-1">
     <mxGraphModel dx="1728" dy="922" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -307,17 +307,29 @@
         <mxCell id="xLDLfK03S4XXTLqaUx2n-2" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;startup_64&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" vertex="1" parent="1">
           <mxGeometry x="2890" y="170" width="350" height="60" as="geometry" />
         </mxCell>
+        <mxCell id="xLDLfK03S4XXTLqaUx2n-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="xLDLfK03S4XXTLqaUx2n-3" target="xLDLfK03S4XXTLqaUx2n-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="xLDLfK03S4XXTLqaUx2n-3" value="计算内核地址" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="2890" y="320" width="350" height="140" as="geometry" />
         </mxCell>
         <mxCell id="xLDLfK03S4XXTLqaUx2n-4" value="&lt;div&gt;因为内核的物理基址可能会发生变化（比如开启kASLR），所以需要通过如下代码重新计算真正的地址&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;div style=&quot;color: rgb(41, 41, 41); background-color: rgb(255, 255, 255); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 19px; white-space: pre;&quot;&gt;&lt;div&gt;&lt;span style=&quot;color: #001080;&quot;&gt;leaq&lt;/span&gt; &amp;nbsp; &amp;nbsp;&lt;span style=&quot;color: #001080;&quot;&gt;_text&lt;/span&gt;(%&lt;span style=&quot;color: #001080;&quot;&gt;rip&lt;/span&gt;), %&lt;span style=&quot;color: #185e73;&quot;&gt;rbp&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #001080;&quot;&gt;subq&lt;/span&gt; &amp;nbsp; &amp;nbsp;$&lt;span style=&quot;color: #001080;&quot;&gt;_text&lt;/span&gt; - &lt;span style=&quot;color: #001080;&quot;&gt;__START_KERNEL_map&lt;/span&gt;, %&lt;span style=&quot;color: #185e73;&quot;&gt;rbp&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="xLDLfK03S4XXTLqaUx2n-3">
           <mxGeometry x="10" y="40" width="330" height="70" as="geometry" />
         </mxCell>
+        <mxCell id="xLDLfK03S4XXTLqaUx2n-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="xLDLfK03S4XXTLqaUx2n-6" target="xLDLfK03S4XXTLqaUx2n-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="xLDLfK03S4XXTLqaUx2n-6" value="检查地址是否对齐" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="2890" y="520" width="350" height="100" as="geometry" />
         </mxCell>
+        <mxCell id="xLDLfK03S4XXTLqaUx2n-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="xLDLfK03S4XXTLqaUx2n-9" target="xLDLfK03S4XXTLqaUx2n-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="xLDLfK03S4XXTLqaUx2n-9" value="检查地址是是否过大" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="2890" y="660" width="350" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="xLDLfK03S4XXTLqaUx2n-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="xLDLfK03S4XXTLqaUx2n-10" target="xLDLfK03S4XXTLqaUx2n-12">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="xLDLfK03S4XXTLqaUx2n-10" value="修正页表基地址" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="2890" y="820" width="350" height="100" as="geometry">
@@ -327,22 +339,25 @@
         <mxCell id="xLDLfK03S4XXTLqaUx2n-11" value="&lt;div&gt;如果startup_64的值不是默认的0x1000000，则包括early_level4_pgt、level3_kernel_gpt在内的很多地址都会不正确，所以，需要进行地址修正。&lt;/div&gt;" style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="xLDLfK03S4XXTLqaUx2n-10">
           <mxGeometry x="10" y="25" width="330" height="70" as="geometry" />
         </mxCell>
+        <mxCell id="xLDLfK03S4XXTLqaUx2n-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="xLDLfK03S4XXTLqaUx2n-12" target="xLDLfK03S4XXTLqaUx2n-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="xLDLfK03S4XXTLqaUx2n-12" value="Identity Map Paging" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="2890" y="960" width="350" height="100" as="geometry" />
         </mxCell>
         <mxCell id="xLDLfK03S4XXTLqaUx2n-13" value="&lt;div&gt;在Identity映射分页中，虚拟地址将会被映射到地址相同的物理地址上&lt;/div&gt;" style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="xLDLfK03S4XXTLqaUx2n-12">
           <mxGeometry x="10" y="25" width="330" height="70" as="geometry" />
         </mxCell>
+        <mxCell id="xLDLfK03S4XXTLqaUx2n-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="xLDLfK03S4XXTLqaUx2n-14" target="xLDLfK03S4XXTLqaUx2n-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="xLDLfK03S4XXTLqaUx2n-14" value="Enable PAE mode And PGE" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="2890" y="1110" width="350" height="100" as="geometry" />
-        </mxCell>
-        <mxCell id="xLDLfK03S4XXTLqaUx2n-15" value="&lt;div&gt;在Identity映射分页中，虚拟地址将会被映射到地址相同的物理地址上&lt;/div&gt;" style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="xLDLfK03S4XXTLqaUx2n-14">
-          <mxGeometry x="10" y="25" width="330" height="70" as="geometry" />
         </mxCell>
         <mxCell id="xLDLfK03S4XXTLqaUx2n-16" value="检查是否支持NX" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="2890" y="1260" width="350" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="xLDLfK03S4XXTLqaUx2n-17" value="&lt;div&gt;在Identity映射分页中，虚拟地址将会被映射到地址相同的物理地址上&lt;/div&gt;" style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="xLDLfK03S4XXTLqaUx2n-16">
+        <mxCell id="xLDLfK03S4XXTLqaUx2n-17" value="&lt;div&gt;如果支持NX需要把_EFER_NX写入MSR，然后对cr0中的一些位进行设置&lt;/div&gt;" style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="xLDLfK03S4XXTLqaUx2n-16">
           <mxGeometry x="10" y="25" width="330" height="70" as="geometry" />
         </mxCell>
       </root>

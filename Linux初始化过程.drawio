@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-06-07T06:33:02.478Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36" etag="zr87alT_0y7-k-ydXyl2" version="24.5.1" type="github">
+<mxfile host="app.diagrams.net" modified="2024-06-07T07:00:12.759Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36" etag="-iDGMJ3pwfuR3dfBsAIJ" version="24.5.1" type="github">
   <diagram id="wFE0QG_FPsp0jaGvCLVb" name="Page-1">
     <mxGraphModel dx="1728" dy="922" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -393,11 +393,17 @@
         <mxCell id="xLDLfK03S4XXTLqaUx2n-34" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;x86_64_start_kernel&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" vertex="1" parent="1">
           <mxGeometry x="3370" y="170" width="350" height="60" as="geometry" />
         </mxCell>
+        <mxCell id="xLDLfK03S4XXTLqaUx2n-49" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="xLDLfK03S4XXTLqaUx2n-35" target="xLDLfK03S4XXTLqaUx2n-37">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="xLDLfK03S4XXTLqaUx2n-35" value="前置检查" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="3370" y="320" width="350" height="90" as="geometry" />
         </mxCell>
         <mxCell id="xLDLfK03S4XXTLqaUx2n-36" value="1、模块的虚拟地址不能低于text段基地址&lt;div&gt;2、模块的内核text段的空间不能小于内核镜像大小等&lt;/div&gt;" style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="xLDLfK03S4XXTLqaUx2n-35">
           <mxGeometry x="10" y="30" width="330" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="xLDLfK03S4XXTLqaUx2n-50" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="xLDLfK03S4XXTLqaUx2n-37" target="xLDLfK03S4XXTLqaUx2n-39">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="xLDLfK03S4XXTLqaUx2n-37" value="reset_eatly_page_tables" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="3370" y="460" width="350" height="90" as="geometry" />
@@ -411,6 +417,9 @@
         <mxCell id="xLDLfK03S4XXTLqaUx2n-40" value="通过设置并加载中断描述符表，能够让CPU在发生中断时做出相应的动作" style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="xLDLfK03S4XXTLqaUx2n-39">
           <mxGeometry x="10" y="30" width="330" height="50" as="geometry" />
         </mxCell>
+        <mxCell id="xLDLfK03S4XXTLqaUx2n-52" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="xLDLfK03S4XXTLqaUx2n-41" target="xLDLfK03S4XXTLqaUx2n-43">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="xLDLfK03S4XXTLqaUx2n-41" value="copy_bootdata" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="3370" y="740" width="350" height="90" as="geometry" />
         </mxCell>
@@ -423,6 +432,9 @@
         <mxCell id="xLDLfK03S4XXTLqaUx2n-44" value="加载处理器微码" style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="xLDLfK03S4XXTLqaUx2n-43">
           <mxGeometry x="10" y="30" width="330" height="50" as="geometry" />
         </mxCell>
+        <mxCell id="xLDLfK03S4XXTLqaUx2n-54" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="xLDLfK03S4XXTLqaUx2n-45" target="xLDLfK03S4XXTLqaUx2n-47">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="xLDLfK03S4XXTLqaUx2n-45" value="检查console_loglevel" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="3370" y="1030" width="350" height="90" as="geometry" />
         </mxCell>
@@ -430,6 +442,18 @@
           <mxGeometry x="3370" y="1170" width="350" height="90" as="geometry" />
         </mxCell>
         <mxCell id="xLDLfK03S4XXTLqaUx2n-48" value="&lt;div&gt;对初期页表进行一些设置以便在初始化内核过程中使用；&lt;/div&gt;&lt;div&gt;将初期页表中的大部分清零，只保留内核高地址映射&lt;/div&gt;" style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="xLDLfK03S4XXTLqaUx2n-47">
+          <mxGeometry x="6" y="20" width="330" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="xLDLfK03S4XXTLqaUx2n-51" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="xLDLfK03S4XXTLqaUx2n-40" target="xLDLfK03S4XXTLqaUx2n-41">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xLDLfK03S4XXTLqaUx2n-53" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="xLDLfK03S4XXTLqaUx2n-44" target="xLDLfK03S4XXTLqaUx2n-45">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xLDLfK03S4XXTLqaUx2n-55" value="x86_64_start_reservations" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="3370" y="1320" width="350" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="xLDLfK03S4XXTLqaUx2n-56" value="&lt;div&gt;首先检查boot_params.hdr.version，接下来调用了reserve_ebda_region函数&lt;/div&gt;" style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="xLDLfK03S4XXTLqaUx2n-55">
           <mxGeometry x="6" y="20" width="330" height="70" as="geometry" />
         </mxCell>
       </root>

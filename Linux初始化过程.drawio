@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-06-11T13:10:58.408Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36" etag="g9q8HSoVDMNxC94cmz2Z" version="24.5.2" type="github">
+<mxfile host="app.diagrams.net" modified="2024-06-11T13:13:19.774Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36" etag="pER8oqFbC86WdCwT22-g" version="24.5.2" type="github">
   <diagram id="wFE0QG_FPsp0jaGvCLVb" name="Page-1">
     <mxGraphModel dx="1185" dy="632" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -948,8 +948,23 @@
         <mxCell id="B23V63-peYjfyN254-Q6-40" value="e820_setup_gap" style="swimlane;whiteSpace=wrap;html=1;startSize=23;" vertex="1" parent="1">
           <mxGeometry x="4370" y="9370" width="350" height="95" as="geometry" />
         </mxCell>
-        <mxCell id="B23V63-peYjfyN254-Q6-41" value="e820_setup_gap" style="swimlane;whiteSpace=wrap;html=1;startSize=23;" vertex="1" parent="1">
+        <mxCell id="B23V63-peYjfyN254-Q6-41" value="x86_init.oem.banner" style="swimlane;whiteSpace=wrap;html=1;startSize=23;" vertex="1" parent="1">
           <mxGeometry x="4370" y="9500" width="350" height="95" as="geometry" />
+        </mxCell>
+        <mxCell id="B23V63-peYjfyN254-Q6-42" value="x86_init.timers.wallclock_init" style="swimlane;whiteSpace=wrap;html=1;startSize=23;" vertex="1" parent="1">
+          <mxGeometry x="4370" y="9650" width="350" height="95" as="geometry" />
+        </mxCell>
+        <mxCell id="B23V63-peYjfyN254-Q6-43" value="memcheck_init" style="swimlane;whiteSpace=wrap;html=1;startSize=23;" vertex="1" parent="1">
+          <mxGeometry x="4370" y="9790" width="350" height="95" as="geometry" />
+        </mxCell>
+        <mxCell id="B23V63-peYjfyN254-Q6-44" value="arch_init_ideal_nops" style="swimlane;whiteSpace=wrap;html=1;startSize=23;" vertex="1" parent="1">
+          <mxGeometry x="4370" y="9940" width="350" height="95" as="geometry" />
+        </mxCell>
+        <mxCell id="B23V63-peYjfyN254-Q6-45" value="register_refined_jiffies" style="swimlane;whiteSpace=wrap;html=1;startSize=23;" vertex="1" parent="1">
+          <mxGeometry x="4370" y="10060" width="350" height="95" as="geometry" />
+        </mxCell>
+        <mxCell id="B23V63-peYjfyN254-Q6-46" value="__initcall" style="swimlane;whiteSpace=wrap;html=1;startSize=23;" vertex="1" parent="1">
+          <mxGeometry x="4370" y="10180" width="350" height="95" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

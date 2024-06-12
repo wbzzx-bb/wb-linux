@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-06-12T09:47:43.275Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" etag="F4Vtb5gzyKp9wMiAz6x_" version="24.5.3" type="github">
+<mxfile host="app.diagrams.net" modified="2024-06-12T09:49:42.445Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" etag="maspJimG-atKC3Eyhvy1" version="24.5.3" type="github">
   <diagram id="wFE0QG_FPsp0jaGvCLVb" name="Page-1">
-    <mxGraphModel dx="988" dy="527" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1185" dy="632" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1222,10 +1222,16 @@
           <mxGeometry x="7" y="25" width="330" height="35" as="geometry" />
         </mxCell>
         <mxCell id="BI63Ks_uq0-yI5f1lpsg-21" value="rcu_init" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="3860" y="4220" width="350" height="90" as="geometry" />
+          <mxGeometry x="3860" y="4220" width="350" height="210" as="geometry" />
         </mxCell>
-        <mxCell id="BI63Ks_uq0-yI5f1lpsg-22" value="idr 是一个管理 ID 到指针映射的数据结构，全称为 ID Radix Tree。idr 用于分配和回收小整数 ID，在多种内核数据结构中提供了一种简单高效的方式来快速查找、添加和删除项" style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=top;whiteSpace=wrap;rounded=0;" vertex="1" parent="BI63Ks_uq0-yI5f1lpsg-21">
-          <mxGeometry x="7" y="25" width="330" height="35" as="geometry" />
+        <mxCell id="BI63Ks_uq0-yI5f1lpsg-22" value="RCU 或读复制更新是Linux内核中实现的可扩展的高性能同步机制。在早期阶段，Linux 内核为并发运行的应用程序提供了支持和环境，但所有执行都是使用单个全局锁在内核中串行化的。现在的 Linux 内核没有单一的全局锁，而是提供了不同的机制，包括无锁数据结构、percpu 数据结构等。这些机制之一是 - read-copy update 。 RCU 技术是为很少修改的数据结构而设计的。 RCU 的想法很简单。例如，我们有一个很少修改的数据结构。如果有人想要更改此数据结构，我们会复制此数据结构并在副本中进行所有更改。同时该数据结构的所有其他用户都使用旧版本。接下来，我们需要选择原始版本的数据结构没有用户的安全时刻，并用修改后的副本更新它" style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=top;whiteSpace=wrap;rounded=0;" vertex="1" parent="BI63Ks_uq0-yI5f1lpsg-21">
+          <mxGeometry x="7" y="25" width="330" height="135" as="geometry" />
+        </mxCell>
+        <mxCell id="BI63Ks_uq0-yI5f1lpsg-23" value="context_tracking_init" style="swimlane;whiteSpace=wrap;html=1;startSize=23;" vertex="1" parent="1">
+          <mxGeometry x="3860" y="4490" width="350" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="BI63Ks_uq0-yI5f1lpsg-24" value="radix_tree_free" style="swimlane;whiteSpace=wrap;html=1;startSize=23;" vertex="1" parent="1">
+          <mxGeometry x="3860" y="4610" width="350" height="70" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

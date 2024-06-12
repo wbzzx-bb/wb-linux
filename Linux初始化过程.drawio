@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-06-12T08:37:00.329Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36" etag="WGShkqroVOeGWEJbRY8-" version="24.5.2" type="github">
+<mxfile host="app.diagrams.net" modified="2024-06-12T09:08:45.872Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36" etag="ljZ2Sc7vUTlLJJKhONYz" version="24.5.2" type="github">
   <diagram id="wFE0QG_FPsp0jaGvCLVb" name="Page-1">
     <mxGraphModel dx="1430" dy="763" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -1102,9 +1102,66 @@
           <mxGeometry x="7" y="25" width="330" height="65" as="geometry" />
         </mxCell>
         <mxCell id="rLRGQqVOm3wpY2ALPgQe-13" value="page_alloc_init" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="3860" y="2610" width="350" height="120" as="geometry" />
+          <mxGeometry x="3860" y="2610" width="350" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="rLRGQqVOm3wpY2ALPgQe-14" value="每个使用fork或者clone的生成的进程都会由内核自动分配一个唯一的PID值。PIDs的管理主要围绕两个特殊的数据结构：struct pid 和 struct upid。第一个标识有关内核中PID的信息，第二个结构表示在特定命名空间中可见的信息。所有PID的信息存储在特殊哈希表中" style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=top;whiteSpace=wrap;rounded=0;" vertex="1" parent="rLRGQqVOm3wpY2ALPgQe-13">
+        <mxCell id="rLRGQqVOm3wpY2ALPgQe-15" value="parse_early_param" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="3860" y="2770" width="350" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="rLRGQqVOm3wpY2ALPgQe-19" value="特定体系结构的代码中已经调用此函数，但并非所有的体系都会调用，需要调用第二个函数parse_args来解析和处理非早期命令行参数" style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=top;whiteSpace=wrap;rounded=0;" vertex="1" parent="rLRGQqVOm3wpY2ALPgQe-15">
+          <mxGeometry x="7" y="25" width="330" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="rLRGQqVOm3wpY2ALPgQe-16" value="jump_label_init" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="3860" y="2900" width="350" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="rLRGQqVOm3wpY2ALPgQe-20" value="初始化跳转标签" style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=top;whiteSpace=wrap;rounded=0;" vertex="1" parent="rLRGQqVOm3wpY2ALPgQe-16">
+          <mxGeometry x="7" y="25" width="330" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="rLRGQqVOm3wpY2ALPgQe-17" value="setup_log_buf(0)" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="3860" y="3020" width="350" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="rLRGQqVOm3wpY2ALPgQe-21" value="设置printk日志缓冲区" style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=top;whiteSpace=wrap;rounded=0;" vertex="1" parent="rLRGQqVOm3wpY2ALPgQe-17">
+          <mxGeometry x="7" y="25" width="330" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="rLRGQqVOm3wpY2ALPgQe-22" value="pidhash_init" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="3860" y="3140" width="350" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="rLRGQqVOm3wpY2ALPgQe-18" value="每个使用fork或者clone的生成的进程都会由内核自动分配一个唯一的PID值。PIDs的管理主要围绕两个特殊的数据结构：struct pid 和 struct upid。第一个标识有关内核中PID的信息，第二个结构表示在特定命名空间中可见的信息。所有PID的信息存储在特殊哈希表中" style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=top;whiteSpace=wrap;rounded=0;" vertex="1" parent="rLRGQqVOm3wpY2ALPgQe-22">
+          <mxGeometry x="7" y="35" width="330" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="rLRGQqVOm3wpY2ALPgQe-23" value="vfs_caches_init_early" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="3860" y="3300" width="350" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="rLRGQqVOm3wpY2ALPgQe-24" value="对虚拟文件系统进行早期初始化" style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=top;whiteSpace=wrap;rounded=0;" vertex="1" parent="rLRGQqVOm3wpY2ALPgQe-23">
+          <mxGeometry x="7" y="25" width="330" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="rLRGQqVOm3wpY2ALPgQe-25" value="sort_main_extable" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="3860" y="3420" width="350" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="rLRGQqVOm3wpY2ALPgQe-26" value="内核内置异常表进行排序" style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=top;whiteSpace=wrap;rounded=0;" vertex="1" parent="rLRGQqVOm3wpY2ALPgQe-25">
+          <mxGeometry x="7" y="25" width="330" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="rLRGQqVOm3wpY2ALPgQe-27" value="trap_init" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="3860" y="3540" width="350" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="rLRGQqVOm3wpY2ALPgQe-28" value="初始化trap处理程序" style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=top;whiteSpace=wrap;rounded=0;" vertex="1" parent="rLRGQqVOm3wpY2ALPgQe-27">
+          <mxGeometry x="7" y="25" width="330" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="rLRGQqVOm3wpY2ALPgQe-29" value="mm_init" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="3860" y="3660" width="350" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="rLRGQqVOm3wpY2ALPgQe-30" value="初始化内存管理器，其初始化了内核内存管理器的不同部分：&lt;div&gt;&lt;div&gt;page_ext_init_flatmem();&lt;/div&gt;&lt;div&gt;mem_init();&lt;/div&gt;&lt;div&gt;kmem_cache_init();&lt;/div&gt;&lt;div&gt;percpu_init_late();&lt;/div&gt;&lt;div&gt;pgtable_init();&lt;/div&gt;&lt;div&gt;vmalloc_init();&lt;/div&gt;&lt;/div&gt;" style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=top;whiteSpace=wrap;rounded=0;" vertex="1" parent="rLRGQqVOm3wpY2ALPgQe-29">
+          <mxGeometry x="7" y="25" width="330" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="rLRGQqVOm3wpY2ALPgQe-31" value="sched_init" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="3860" y="3840" width="350" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="rLRGQqVOm3wpY2ALPgQe-32" value="sched_init" style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=top;whiteSpace=wrap;rounded=0;" vertex="1" parent="rLRGQqVOm3wpY2ALPgQe-31">
+          <mxGeometry x="7" y="25" width="330" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="rLRGQqVOm3wpY2ALPgQe-34" value="preempt_disable" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="3860" y="3960" width="350" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="rLRGQqVOm3wpY2ALPgQe-35" value="抢占就是操作系统内核抢占当前任务以运行更高优先级任务的能力。&lt;div&gt;这里需要禁用抢占，因为早期启动时我们只有一个init进程，并且在调用cpu_idle之前不需要停止他&lt;/div&gt;" style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=top;whiteSpace=wrap;rounded=0;" vertex="1" parent="rLRGQqVOm3wpY2ALPgQe-34">
           <mxGeometry x="7" y="25" width="330" height="65" as="geometry" />
         </mxCell>
       </root>

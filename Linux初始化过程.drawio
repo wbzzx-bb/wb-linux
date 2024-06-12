@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-06-12T09:44:44.672Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" etag="KAH_X6BbuCq7doQjOEH6" version="24.5.3" type="github">
+<mxfile host="app.diagrams.net" modified="2024-06-12T09:47:43.275Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" etag="F4Vtb5gzyKp9wMiAz6x_" version="24.5.3" type="github">
   <diagram id="wFE0QG_FPsp0jaGvCLVb" name="Page-1">
     <mxGraphModel dx="988" dy="527" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -1214,6 +1214,18 @@
         </mxCell>
         <mxCell id="BI63Ks_uq0-yI5f1lpsg-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.497;entryY=-0.023;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="rLRGQqVOm3wpY2ALPgQe-27" target="rLRGQqVOm3wpY2ALPgQe-29">
           <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BI63Ks_uq0-yI5f1lpsg-19" value="idr_init_cache" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="3860" y="4100" width="350" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="BI63Ks_uq0-yI5f1lpsg-20" value="idr 是一个管理 ID 到指针映射的数据结构，全称为 ID Radix Tree。idr 用于分配和回收小整数 ID，在多种内核数据结构中提供了一种简单高效的方式来快速查找、添加和删除项" style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=top;whiteSpace=wrap;rounded=0;" vertex="1" parent="BI63Ks_uq0-yI5f1lpsg-19">
+          <mxGeometry x="7" y="25" width="330" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="BI63Ks_uq0-yI5f1lpsg-21" value="rcu_init" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="3860" y="4220" width="350" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="BI63Ks_uq0-yI5f1lpsg-22" value="idr 是一个管理 ID 到指针映射的数据结构，全称为 ID Radix Tree。idr 用于分配和回收小整数 ID，在多种内核数据结构中提供了一种简单高效的方式来快速查找、添加和删除项" style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=top;whiteSpace=wrap;rounded=0;" vertex="1" parent="BI63Ks_uq0-yI5f1lpsg-21">
+          <mxGeometry x="7" y="25" width="330" height="35" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

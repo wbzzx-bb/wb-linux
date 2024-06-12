@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-06-12T09:43:11.619Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" etag="JoghVDe5MTx5NbUhmtFc" version="24.5.3" type="github">
+<mxfile host="app.diagrams.net" modified="2024-06-12T09:44:44.672Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" etag="KAH_X6BbuCq7doQjOEH6" version="24.5.3" type="github">
   <diagram id="wFE0QG_FPsp0jaGvCLVb" name="Page-1">
     <mxGraphModel dx="988" dy="527" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -1071,11 +1071,17 @@
         <mxCell id="B23V63-peYjfyN254-Q6-46" value="__initcall" style="swimlane;whiteSpace=wrap;html=1;startSize=23;" parent="1" vertex="1">
           <mxGeometry x="4370" y="10180" width="350" height="95" as="geometry" />
         </mxCell>
+        <mxCell id="BI63Ks_uq0-yI5f1lpsg-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="rLRGQqVOm3wpY2ALPgQe-1" target="rLRGQqVOm3wpY2ALPgQe-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="rLRGQqVOm3wpY2ALPgQe-1" value="mm_init_cpumask" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="3860" y="1770" width="350" height="90" as="geometry" />
         </mxCell>
         <mxCell id="rLRGQqVOm3wpY2ALPgQe-2" value="将cpumask指针设置为内存描述符cpumask" style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=top;whiteSpace=wrap;rounded=0;" parent="rLRGQqVOm3wpY2ALPgQe-1" vertex="1">
           <mxGeometry x="7" y="25" width="330" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="BI63Ks_uq0-yI5f1lpsg-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="rLRGQqVOm3wpY2ALPgQe-3" target="rLRGQqVOm3wpY2ALPgQe-5">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="rLRGQqVOm3wpY2ALPgQe-3" value="setup_command_line" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="3860" y="1910" width="350" height="130" as="geometry" />
@@ -1083,11 +1089,17 @@
         <mxCell id="rLRGQqVOm3wpY2ALPgQe-4" value="获取内核命令行的指针，分配几个缓冲区来存储命令行。&lt;div style=&quot;font-size: 10px;&quot;&gt;&lt;ul style=&quot;box-sizing: border-box; padding-left: 2em; margin-top: 0px; margin-bottom: 16px; color: rgb(31, 35, 40); font-family: -apple-system, BlinkMacSystemFont, &amp;quot;Segoe UI&amp;quot;, &amp;quot;Noto Sans&amp;quot;, Helvetica, Arial, sans-serif, &amp;quot;Apple Color Emoji&amp;quot;, &amp;quot;Segoe UI Emoji&amp;quot;; background-color: rgb(255, 255, 255);&quot; data-immersive-translate-walked=&quot;45189de3-fc48-444f-a3cc-4364bdc870d5&quot; dir=&quot;auto&quot;&gt;&lt;li style=&quot;box-sizing: border-box;&quot; data-immersive-translate-paragraph=&quot;1&quot; data-immersive-translate-walked=&quot;45189de3-fc48-444f-a3cc-4364bdc870d5&quot;&gt;&lt;font style=&quot;box-sizing: border-box; word-break: break-word; font-size: 10px;&quot; lang=&quot;zh-CN&quot; data-immersive-translate-translation-element-mark=&quot;1&quot; class=&quot;notranslate immersive-translate-target-wrapper immersive-translate-state-dual&quot;&gt;&lt;code style=&quot;box-sizing: border-box; font-family: var(--fontStack-monospace, ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, Liberation Mono, monospace); padding: 0.2em 0.4em; margin: 0px; white-space-collapse: break-spaces; background-color: var(--bgColor-neutral-muted, var(--color-neutral-muted)); border-radius: 6px;&quot; data-immersive-translate-walked=&quot;45189de3-fc48-444f-a3cc-4364bdc870d5&quot;&gt;saved_command_line&lt;/code&gt;&amp;nbsp;- 将包含启动命令行；&lt;/font&gt;&lt;/li&gt;&lt;li style=&quot;box-sizing: border-box; margin-top: 0.25em;&quot; data-immersive-translate-paragraph=&quot;1&quot; data-immersive-translate-walked=&quot;45189de3-fc48-444f-a3cc-4364bdc870d5&quot;&gt;&lt;font style=&quot;box-sizing: border-box; word-break: break-word; font-size: 10px;&quot; lang=&quot;zh-CN&quot; data-immersive-translate-translation-element-mark=&quot;1&quot; class=&quot;notranslate immersive-translate-target-wrapper immersive-translate-state-dual&quot;&gt;&lt;code style=&quot;box-sizing: border-box; font-family: var(--fontStack-monospace, ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, Liberation Mono, monospace); padding: 0.2em 0.4em; margin: 0px; white-space-collapse: break-spaces; background-color: var(--bgColor-neutral-muted, var(--color-neutral-muted)); border-radius: 6px;&quot; data-immersive-translate-walked=&quot;45189de3-fc48-444f-a3cc-4364bdc870d5&quot;&gt;initcall_command_line&lt;/code&gt;&amp;nbsp;- 将包含启动命令行。将在&amp;nbsp;&lt;code style=&quot;box-sizing: border-box; font-family: var(--fontStack-monospace, ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, Liberation Mono, monospace); padding: 0.2em 0.4em; margin: 0px; white-space-collapse: break-spaces; background-color: var(--bgColor-neutral-muted, var(--color-neutral-muted)); border-radius: 6px;&quot; data-immersive-translate-walked=&quot;45189de3-fc48-444f-a3cc-4364bdc870d5&quot;&gt;do_initcall_level&lt;/code&gt;&amp;nbsp;中使用；&lt;/font&gt;&lt;/li&gt;&lt;li style=&quot;box-sizing: border-box; margin-top: 0.25em;&quot; data-immersive-translate-paragraph=&quot;1&quot; data-immersive-translate-walked=&quot;45189de3-fc48-444f-a3cc-4364bdc870d5&quot;&gt;&lt;font style=&quot;box-sizing: border-box; word-break: break-word; font-size: 10px;&quot; lang=&quot;zh-CN&quot; data-immersive-translate-translation-element-mark=&quot;1&quot; class=&quot;notranslate immersive-translate-target-wrapper immersive-translate-state-dual&quot;&gt;&lt;code style=&quot;box-sizing: border-box; font-family: var(--fontStack-monospace, ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, Liberation Mono, monospace); padding: 0.2em 0.4em; margin: 0px; white-space-collapse: break-spaces; background-color: var(--bgColor-neutral-muted, var(--color-neutral-muted)); border-radius: 6px;&quot; data-immersive-translate-walked=&quot;45189de3-fc48-444f-a3cc-4364bdc870d5&quot;&gt;static_command_line&lt;/code&gt;&amp;nbsp;- 将包含参数解析的命令行。&lt;/font&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;" style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=top;whiteSpace=wrap;rounded=0;" parent="rLRGQqVOm3wpY2ALPgQe-3" vertex="1">
           <mxGeometry x="7" y="25" width="330" height="65" as="geometry" />
         </mxCell>
+        <mxCell id="BI63Ks_uq0-yI5f1lpsg-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="rLRGQqVOm3wpY2ALPgQe-5" target="rLRGQqVOm3wpY2ALPgQe-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="rLRGQqVOm3wpY2ALPgQe-5" value="setup_nr_cpu_ids" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="3860" y="2080" width="350" height="90" as="geometry" />
         </mxCell>
         <mxCell id="rLRGQqVOm3wpY2ALPgQe-6" value="确定系统中可用的CPU数量" style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=top;whiteSpace=wrap;rounded=0;" parent="rLRGQqVOm3wpY2ALPgQe-5" vertex="1">
           <mxGeometry x="7" y="25" width="330" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="BI63Ks_uq0-yI5f1lpsg-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="rLRGQqVOm3wpY2ALPgQe-7" target="rLRGQqVOm3wpY2ALPgQe-9">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="rLRGQqVOm3wpY2ALPgQe-7" value="setup_per_cpu_areas" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="3860" y="2200" width="350" height="90" as="geometry" />
@@ -1095,8 +1107,14 @@
         <mxCell id="rLRGQqVOm3wpY2ALPgQe-8" value="为percpu设置内存区域" style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=top;whiteSpace=wrap;rounded=0;" parent="rLRGQqVOm3wpY2ALPgQe-7" vertex="1">
           <mxGeometry x="7" y="25" width="330" height="65" as="geometry" />
         </mxCell>
+        <mxCell id="BI63Ks_uq0-yI5f1lpsg-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="rLRGQqVOm3wpY2ALPgQe-9" target="rLRGQqVOm3wpY2ALPgQe-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="rLRGQqVOm3wpY2ALPgQe-9" value="smp_prepare_boot_cpu" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="3860" y="2330" width="350" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="BI63Ks_uq0-yI5f1lpsg-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="rLRGQqVOm3wpY2ALPgQe-11" target="rLRGQqVOm3wpY2ALPgQe-13">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="rLRGQqVOm3wpY2ALPgQe-11" value="build_all_zonelists" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="3860" y="2460" width="350" height="90" as="geometry" />
@@ -1104,8 +1122,14 @@
         <mxCell id="rLRGQqVOm3wpY2ALPgQe-12" value="设置优先分配的区域的顺序" style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=top;whiteSpace=wrap;rounded=0;" parent="rLRGQqVOm3wpY2ALPgQe-11" vertex="1">
           <mxGeometry x="7" y="25" width="330" height="65" as="geometry" />
         </mxCell>
+        <mxCell id="BI63Ks_uq0-yI5f1lpsg-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="rLRGQqVOm3wpY2ALPgQe-13" target="rLRGQqVOm3wpY2ALPgQe-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="rLRGQqVOm3wpY2ALPgQe-13" value="page_alloc_init" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="3860" y="2610" width="350" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="BI63Ks_uq0-yI5f1lpsg-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="rLRGQqVOm3wpY2ALPgQe-15" target="rLRGQqVOm3wpY2ALPgQe-16">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="rLRGQqVOm3wpY2ALPgQe-15" value="parse_early_param" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="3860" y="2770" width="350" height="90" as="geometry" />
@@ -1113,11 +1137,17 @@
         <mxCell id="rLRGQqVOm3wpY2ALPgQe-19" value="特定体系结构的代码中已经调用此函数，但并非所有的体系都会调用，需要调用第二个函数parse_args来解析和处理非早期命令行参数" style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=top;whiteSpace=wrap;rounded=0;" parent="rLRGQqVOm3wpY2ALPgQe-15" vertex="1">
           <mxGeometry x="7" y="25" width="330" height="65" as="geometry" />
         </mxCell>
+        <mxCell id="BI63Ks_uq0-yI5f1lpsg-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="rLRGQqVOm3wpY2ALPgQe-16" target="rLRGQqVOm3wpY2ALPgQe-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="rLRGQqVOm3wpY2ALPgQe-16" value="jump_label_init" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="3860" y="2900" width="350" height="90" as="geometry" />
         </mxCell>
         <mxCell id="rLRGQqVOm3wpY2ALPgQe-20" value="初始化跳转标签" style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=top;whiteSpace=wrap;rounded=0;" parent="rLRGQqVOm3wpY2ALPgQe-16" vertex="1">
           <mxGeometry x="7" y="25" width="330" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="BI63Ks_uq0-yI5f1lpsg-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="rLRGQqVOm3wpY2ALPgQe-17" target="rLRGQqVOm3wpY2ALPgQe-22">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="rLRGQqVOm3wpY2ALPgQe-17" value="setup_log_buf(0)" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="3860" y="3020" width="350" height="90" as="geometry" />
@@ -1125,17 +1155,26 @@
         <mxCell id="rLRGQqVOm3wpY2ALPgQe-21" value="设置printk日志缓冲区" style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=top;whiteSpace=wrap;rounded=0;" parent="rLRGQqVOm3wpY2ALPgQe-17" vertex="1">
           <mxGeometry x="7" y="25" width="330" height="65" as="geometry" />
         </mxCell>
+        <mxCell id="BI63Ks_uq0-yI5f1lpsg-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="rLRGQqVOm3wpY2ALPgQe-22" target="rLRGQqVOm3wpY2ALPgQe-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="rLRGQqVOm3wpY2ALPgQe-22" value="pidhash_init" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="3860" y="3140" width="350" height="120" as="geometry" />
         </mxCell>
         <mxCell id="rLRGQqVOm3wpY2ALPgQe-18" value="每个使用fork或者clone的生成的进程都会由内核自动分配一个唯一的PID值。PIDs的管理主要围绕两个特殊的数据结构：struct pid 和 struct upid。第一个标识有关内核中PID的信息，第二个结构表示在特定命名空间中可见的信息。所有PID的信息存储在特殊哈希表中" style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=top;whiteSpace=wrap;rounded=0;" parent="rLRGQqVOm3wpY2ALPgQe-22" vertex="1">
           <mxGeometry x="7" y="35" width="330" height="65" as="geometry" />
         </mxCell>
+        <mxCell id="BI63Ks_uq0-yI5f1lpsg-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="rLRGQqVOm3wpY2ALPgQe-23" target="rLRGQqVOm3wpY2ALPgQe-25">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="rLRGQqVOm3wpY2ALPgQe-23" value="vfs_caches_init_early" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="3860" y="3300" width="350" height="90" as="geometry" />
         </mxCell>
         <mxCell id="rLRGQqVOm3wpY2ALPgQe-24" value="对虚拟文件系统进行早期初始化" style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=top;whiteSpace=wrap;rounded=0;" parent="rLRGQqVOm3wpY2ALPgQe-23" vertex="1">
           <mxGeometry x="7" y="25" width="330" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="BI63Ks_uq0-yI5f1lpsg-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="rLRGQqVOm3wpY2ALPgQe-25" target="rLRGQqVOm3wpY2ALPgQe-27">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="rLRGQqVOm3wpY2ALPgQe-25" value="sort_main_extable" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="3860" y="3420" width="350" height="90" as="geometry" />
@@ -1149,23 +1188,32 @@
         <mxCell id="rLRGQqVOm3wpY2ALPgQe-28" value="初始化trap处理程序" style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=top;whiteSpace=wrap;rounded=0;" parent="rLRGQqVOm3wpY2ALPgQe-27" vertex="1">
           <mxGeometry x="7" y="25" width="330" height="65" as="geometry" />
         </mxCell>
+        <mxCell id="BI63Ks_uq0-yI5f1lpsg-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="rLRGQqVOm3wpY2ALPgQe-29" target="rLRGQqVOm3wpY2ALPgQe-31">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="rLRGQqVOm3wpY2ALPgQe-29" value="mm_init" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="3860" y="3660" width="350" height="140" as="geometry" />
         </mxCell>
         <mxCell id="rLRGQqVOm3wpY2ALPgQe-30" value="初始化内存管理器，其初始化了内核内存管理器的不同部分：&lt;div&gt;&lt;div&gt;page_ext_init_flatmem();&lt;/div&gt;&lt;div&gt;mem_init();&lt;/div&gt;&lt;div&gt;kmem_cache_init();&lt;/div&gt;&lt;div&gt;percpu_init_late();&lt;/div&gt;&lt;div&gt;pgtable_init();&lt;/div&gt;&lt;div&gt;vmalloc_init();&lt;/div&gt;&lt;/div&gt;" style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=top;whiteSpace=wrap;rounded=0;" parent="rLRGQqVOm3wpY2ALPgQe-29" vertex="1">
           <mxGeometry x="7" y="25" width="330" height="65" as="geometry" />
         </mxCell>
+        <mxCell id="BI63Ks_uq0-yI5f1lpsg-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="rLRGQqVOm3wpY2ALPgQe-31" target="rLRGQqVOm3wpY2ALPgQe-34">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="rLRGQqVOm3wpY2ALPgQe-31" value="sched_init" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="3860" y="3840" width="350" height="70" as="geometry" />
         </mxCell>
         <mxCell id="rLRGQqVOm3wpY2ALPgQe-32" value="sched_init" style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=top;whiteSpace=wrap;rounded=0;" parent="rLRGQqVOm3wpY2ALPgQe-31" vertex="1">
-          <mxGeometry x="7" y="25" width="330" height="65" as="geometry" />
+          <mxGeometry x="7" y="25" width="330" height="35" as="geometry" />
         </mxCell>
         <mxCell id="rLRGQqVOm3wpY2ALPgQe-34" value="preempt_disable" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="3860" y="3960" width="350" height="110" as="geometry" />
         </mxCell>
         <mxCell id="rLRGQqVOm3wpY2ALPgQe-35" value="抢占就是操作系统内核抢占当前任务以运行更高优先级任务的能力。&lt;div&gt;这里需要禁用抢占，因为早期启动时我们只有一个init进程，并且在调用cpu_idle之前不需要停止他&lt;/div&gt;" style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=top;whiteSpace=wrap;rounded=0;" parent="rLRGQqVOm3wpY2ALPgQe-34" vertex="1">
           <mxGeometry x="7" y="25" width="330" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="BI63Ks_uq0-yI5f1lpsg-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.497;entryY=-0.023;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="rLRGQqVOm3wpY2ALPgQe-27" target="rLRGQqVOm3wpY2ALPgQe-29">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

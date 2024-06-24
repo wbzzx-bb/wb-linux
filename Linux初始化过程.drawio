@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-06-24T07:56:04.265Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" etag="9kAv1W2KlyE8ZejMZLH-" version="24.6.2" type="github">
+<mxfile host="app.diagrams.net" modified="2024-06-24T07:57:06.216Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" etag="Sz1hnr2_Ej6E7w-4lLmF" version="24.6.2" type="github">
   <diagram id="wFE0QG_FPsp0jaGvCLVb" name="Page-1">
     <mxGraphModel dx="2526" dy="0" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -1556,7 +1556,7 @@
         <mxCell id="Z_q01ZVwBevNQPOma37S-1" value="kernel_thread" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="4850" y="460" width="350" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="oqW9nMEaRYfXAz-U89Om-2" value="pid1，init进程" style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=top;whiteSpace=wrap;rounded=0;" vertex="1" parent="Z_q01ZVwBevNQPOma37S-1">
+        <mxCell id="oqW9nMEaRYfXAz-U89Om-2" value="pid1，init进程" style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=top;whiteSpace=wrap;rounded=0;" parent="Z_q01ZVwBevNQPOma37S-1" vertex="1">
           <mxGeometry x="10" y="30" width="330" height="70" as="geometry" />
         </mxCell>
         <mxCell id="Z_q01ZVwBevNQPOma37S-2" value="numa_default_policy" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
@@ -1577,8 +1577,11 @@
         <mxCell id="Z_q01ZVwBevNQPOma37S-5" value="complete" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="4850" y="1235" width="350" height="90" as="geometry" />
         </mxCell>
-        <mxCell id="oqW9nMEaRYfXAz-U89Om-1" value="kernel_thread" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="4850" y="810" width="350" height="90" as="geometry" />
+        <mxCell id="oqW9nMEaRYfXAz-U89Om-1" value="kernel_thread" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="4850" y="810" width="350" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="QYFyd3U9_od4w2dlP8on-1" value="pid2， kthreadd进程，一个特殊的内核线程，它管理并帮助内核的不同部分创建另一个内核线程" style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=top;whiteSpace=wrap;rounded=0;" vertex="1" parent="oqW9nMEaRYfXAz-U89Om-1">
+          <mxGeometry y="30" width="330" height="70" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

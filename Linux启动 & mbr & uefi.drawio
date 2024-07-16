@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-07-16T05:49:35.015Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" etag="2vbYkBOMeIbCYfWk1JT_" version="24.6.5" type="github">
+<mxfile host="app.diagrams.net" modified="2024-07-16T05:54:06.759Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" etag="VNPfOvkVuZvsO0GO5Neg" version="24.6.5" type="github">
   <diagram id="wFE0QG_FPsp0jaGvCLVb" name="Page-1">
     <mxGraphModel dx="3980" dy="763" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -314,8 +314,11 @@
         <mxCell id="e0Y05Qu0X8Le1kTo7Jqr-6" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;kernel.img&lt;/h1&gt;&lt;p&gt;该映像包含 GRUB 的基本运行时设施：设备和文件处理框架、环境变量、救援模式命令行解析器等。它很少直接使用，但内置于所有核心映像中。&lt;/p&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="-1880" y="2160" width="650" height="120" as="geometry" />
         </mxCell>
-        <mxCell id="e0Y05Qu0X8Le1kTo7Jqr-7" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;core.img&lt;/h1&gt;&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&lt;/p&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+        <mxCell id="e0Y05Qu0X8Le1kTo7Jqr-7" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;core.img&lt;/h1&gt;&lt;p&gt;这是GRUB的核心映像。它是由 grub-mkimage 程序根据内核映像和任意模块列表动态构建的。通常，它包含足够的模块来访问 /boot/grub，并在运行时从文件系统加载其他所有内容（包括菜单处理、加载目标操作系统的能力等）。模块化设计允许核心映像保持较小，因为必须安装它的磁盘区域通常小至 32KB。&lt;/p&gt;&lt;p&gt;有关核心映像在 PC 系统上的安装位置的详细信息，请参阅 BIOS 安装。&lt;/p&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="-1880" y="2330" width="650" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="e0Y05Qu0X8Le1kTo7Jqr-8" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;*.mod&lt;/h1&gt;&lt;p&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;GRUB 中的其他所有内容都驻留在可动态加载的模块中。这些通常会自动加载，或者在必要时内置到核心映像中，但也可以使用 insmod 命令手动加载（请参阅 insmod）&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;。&lt;/span&gt;&lt;/p&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-1880" y="2510" width="650" height="120" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-07-16T05:42:39.884Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" etag="VuY9k7AcJtk-gmw-tJnh" version="24.6.5" type="github">
+<mxfile host="app.diagrams.net" modified="2024-07-16T05:49:35.015Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" etag="2vbYkBOMeIbCYfWk1JT_" version="24.6.5" type="github">
   <diagram id="wFE0QG_FPsp0jaGvCLVb" name="Page-1">
     <mxGraphModel dx="3980" dy="763" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -299,19 +299,19 @@
         <mxCell id="e0Y05Qu0X8Le1kTo7Jqr-1" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;boot.img&lt;/h1&gt;&lt;p&gt;在PC BIOS系统上，boot.img是GRUB启动的第一个部分，&lt;span style=&quot;background-color: initial;&quot;&gt;它被写入主引导记录 (MBR) 或分区的引导扇区。由于 PC 引导扇区为 512 字节，因此该映像的大小恰好为 512 字节。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;boot.img 的唯一功能是从本地磁盘读取核心映像的第一个扇区并跳转到该扇区。由于大小限制，boot.img 无法理解任何文件系统结构，因此 grub-install 在安装 GRUB 时将核心映像的第一个扇区的位置硬编码到 boot.img&lt;/span&gt;&lt;/p&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="-1880" y="1345" width="650" height="120" as="geometry" />
         </mxCell>
-        <mxCell id="e0Y05Qu0X8Le1kTo7Jqr-2" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;diskboot.img&lt;/h1&gt;&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&lt;/p&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+        <mxCell id="e0Y05Qu0X8Le1kTo7Jqr-2" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;diskboot.img&lt;/h1&gt;&lt;p&gt;从硬盘启动时，该映像用作核心映像的第一个扇区。它将核心映像的其余部分读入内存并启动内核。由于文件系统处理尚不可用，因此它使用块列表格式对核心映像的位置进行编码。&lt;/p&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="-1880" y="1520" width="650" height="120" as="geometry" />
         </mxCell>
-        <mxCell id="e0Y05Qu0X8Le1kTo7Jqr-3" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;cdboot.img&lt;/h1&gt;&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&lt;/p&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+        <mxCell id="e0Y05Qu0X8Le1kTo7Jqr-3" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;cdboot.img&lt;/h1&gt;&lt;p&gt;从 CD-ROM 驱动器引导时，该映像用作核心映像的第一个扇区。它执行与 diskboot.img 类似的功能。&lt;/p&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="-1880" y="1710" width="650" height="120" as="geometry" />
         </mxCell>
-        <mxCell id="e0Y05Qu0X8Le1kTo7Jqr-4" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;pxeboot.img&lt;/h1&gt;&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&lt;/p&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+        <mxCell id="e0Y05Qu0X8Le1kTo7Jqr-4" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;pxeboot.img&lt;/h1&gt;&lt;p&gt;使用 PXE 从网络引导时，此映像用作核心映像的启动。请参阅网络。&lt;/p&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="-1880" y="1870" width="650" height="120" as="geometry" />
         </mxCell>
-        <mxCell id="e0Y05Qu0X8Le1kTo7Jqr-5" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;lnxboot.img&lt;/h1&gt;&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&lt;/p&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+        <mxCell id="e0Y05Qu0X8Le1kTo7Jqr-5" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;lnxboot.img&lt;/h1&gt;&lt;p&gt;该映像可以放置在核心映像的开头，以使 GRUB 看起来足够像 Linux 内核，以便可以通过 LILO 使用“image=”部分来引导它。&lt;/p&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="-1880" y="2010" width="650" height="120" as="geometry" />
         </mxCell>
-        <mxCell id="e0Y05Qu0X8Le1kTo7Jqr-6" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;kernel.img&lt;/h1&gt;&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&lt;/p&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+        <mxCell id="e0Y05Qu0X8Le1kTo7Jqr-6" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;kernel.img&lt;/h1&gt;&lt;p&gt;该映像包含 GRUB 的基本运行时设施：设备和文件处理框架、环境变量、救援模式命令行解析器等。它很少直接使用，但内置于所有核心映像中。&lt;/p&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="-1880" y="2160" width="650" height="120" as="geometry" />
         </mxCell>
         <mxCell id="e0Y05Qu0X8Le1kTo7Jqr-7" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;core.img&lt;/h1&gt;&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&lt;/p&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">

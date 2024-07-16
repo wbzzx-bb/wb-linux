@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-05-20T09:47:03.195Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36" etag="KQwtBgJbY8koIbPoBQ1H" version="24.4.2" type="github">
+<mxfile host="app.diagrams.net" modified="2024-07-16T03:48:50.628Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" etag="aOIeQDP2VRcfINOa4EzO" version="24.6.5" type="github">
   <diagram id="wFE0QG_FPsp0jaGvCLVb" name="Page-1">
     <mxGraphModel dx="4624" dy="1106" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -295,6 +295,27 @@
         </mxCell>
         <mxCell id="wUOGeoJ95WVeaqsHUyHG-3" value="&lt;font style=&quot;font-size: 19px;&quot;&gt;GPT&lt;/font&gt;" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;rotation=-90;" parent="1" vertex="1">
           <mxGeometry x="-785" y="1370" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="e0Y05Qu0X8Le1kTo7Jqr-1" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;boot.img&lt;/h1&gt;&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&lt;/p&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-1880" y="1345" width="650" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="e0Y05Qu0X8Le1kTo7Jqr-2" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;diskboot.img&lt;/h1&gt;&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&lt;/p&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-1880" y="1520" width="650" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="e0Y05Qu0X8Le1kTo7Jqr-3" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;cdboot.img&lt;/h1&gt;&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&lt;/p&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-1880" y="1710" width="650" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="e0Y05Qu0X8Le1kTo7Jqr-4" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;pxeboot.img&lt;/h1&gt;&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&lt;/p&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-1880" y="1870" width="650" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="e0Y05Qu0X8Le1kTo7Jqr-5" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;lnxboot.img&lt;/h1&gt;&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&lt;/p&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-1880" y="2010" width="650" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="e0Y05Qu0X8Le1kTo7Jqr-6" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;kernel.img&lt;/h1&gt;&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&lt;/p&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-1880" y="2160" width="650" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="e0Y05Qu0X8Le1kTo7Jqr-7" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;core.img&lt;/h1&gt;&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&lt;/p&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-1880" y="2330" width="650" height="120" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

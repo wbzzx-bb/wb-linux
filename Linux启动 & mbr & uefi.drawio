@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-07-16T05:54:06.759Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" etag="VNPfOvkVuZvsO0GO5Neg" version="24.6.5" type="github">
+<mxfile host="app.diagrams.net" modified="2024-07-16T06:01:28.157Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" etag="3P5YYxvjc0t5wfJuSzyz" version="24.6.5" type="github">
   <diagram id="wFE0QG_FPsp0jaGvCLVb" name="Page-1">
     <mxGraphModel dx="3980" dy="763" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -319,6 +319,9 @@
         </mxCell>
         <mxCell id="e0Y05Qu0X8Le1kTo7Jqr-8" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;*.mod&lt;/h1&gt;&lt;p&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;GRUB 中的其他所有内容都驻留在可动态加载的模块中。这些通常会自动加载，或者在必要时内置到核心映像中，但也可以使用 insmod 命令手动加载（请参阅 insmod）&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;。&lt;/span&gt;&lt;/p&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="-1880" y="2510" width="650" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="e0Y05Qu0X8Le1kTo7Jqr-9" value="GRUB 由多个映像组成：用于以各种方式启动 GRUB 的各种引导映像、内核映像以及与内核映像组合在一起形成核心映像的一组模块。以下是它们的简短概述。" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-1880" y="1255" width="500" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

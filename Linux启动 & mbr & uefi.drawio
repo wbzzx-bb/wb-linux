@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-07-16T03:48:50.628Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" etag="aOIeQDP2VRcfINOa4EzO" version="24.6.5" type="github">
+<mxfile host="app.diagrams.net" modified="2024-07-16T05:42:39.884Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" etag="VuY9k7AcJtk-gmw-tJnh" version="24.6.5" type="github">
   <diagram id="wFE0QG_FPsp0jaGvCLVb" name="Page-1">
-    <mxGraphModel dx="4624" dy="1106" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="3980" dy="763" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -296,7 +296,7 @@
         <mxCell id="wUOGeoJ95WVeaqsHUyHG-3" value="&lt;font style=&quot;font-size: 19px;&quot;&gt;GPT&lt;/font&gt;" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;rotation=-90;" parent="1" vertex="1">
           <mxGeometry x="-785" y="1370" width="90" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="e0Y05Qu0X8Le1kTo7Jqr-1" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;boot.img&lt;/h1&gt;&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&lt;/p&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+        <mxCell id="e0Y05Qu0X8Le1kTo7Jqr-1" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;boot.img&lt;/h1&gt;&lt;p&gt;在PC BIOS系统上，boot.img是GRUB启动的第一个部分，&lt;span style=&quot;background-color: initial;&quot;&gt;它被写入主引导记录 (MBR) 或分区的引导扇区。由于 PC 引导扇区为 512 字节，因此该映像的大小恰好为 512 字节。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;boot.img 的唯一功能是从本地磁盘读取核心映像的第一个扇区并跳转到该扇区。由于大小限制，boot.img 无法理解任何文件系统结构，因此 grub-install 在安装 GRUB 时将核心映像的第一个扇区的位置硬编码到 boot.img&lt;/span&gt;&lt;/p&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="-1880" y="1345" width="650" height="120" as="geometry" />
         </mxCell>
         <mxCell id="e0Y05Qu0X8Le1kTo7Jqr-2" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;diskboot.img&lt;/h1&gt;&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&lt;/p&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">

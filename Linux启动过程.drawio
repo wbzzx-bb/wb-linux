@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36" version="24.7.7">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36" version="24.7.13">
   <diagram name="第 1 页" id="mMlDlkdDfd4doMFzdmtv">
-    <mxGraphModel dx="4247" dy="1383" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="3728" dy="1106" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -58,7 +58,7 @@
         <mxCell id="mZBOsqE5cRWJT8c39Yzn-1" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://intranetproxy.alipay.com/skylark/lark/0/2024/png/86256527/1725971527057-cacfa0ba-c0ec-4c6c-9c57-be4963603fe7.png;" parent="1" vertex="1">
           <mxGeometry x="-1620" y="70" width="781.1" height="427" as="geometry" />
         </mxCell>
-        <mxCell id="tkt-nYlQ8RUQgV1p8vgq-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="mZBOsqE5cRWJT8c39Yzn-2" target="tkt-nYlQ8RUQgV1p8vgq-6">
+        <mxCell id="tkt-nYlQ8RUQgV1p8vgq-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="mZBOsqE5cRWJT8c39Yzn-2" target="tkt-nYlQ8RUQgV1p8vgq-6" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="mZBOsqE5cRWJT8c39Yzn-2" value="" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
@@ -67,106 +67,106 @@
         <mxCell id="mZBOsqE5cRWJT8c39Yzn-3" value="&lt;h1 style=&quot;margin-top: 0px; line-height: 100%;&quot;&gt;&lt;span style=&quot;background-color: initial; font-size: 12px; font-weight: normal;&quot;&gt;如果加载的EFI路径是“\EFI\boot\BOOTX64.EFI”且fax64在\EFI\boot目录下存在，则进入fallback流程&lt;/span&gt;&lt;br&gt;&lt;/h1&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="-918.5" y="800" width="290" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="tkt-nYlQ8RUQgV1p8vgq-1" value="&lt;span style=&quot;font-size: 23px;&quot;&gt;是否进入fallback流程&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="tkt-nYlQ8RUQgV1p8vgq-1" value="&lt;span style=&quot;font-size: 23px;&quot;&gt;是否进入fallback流程&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="-923.5" y="760" width="300" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="tkt-nYlQ8RUQgV1p8vgq-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="tkt-nYlQ8RUQgV1p8vgq-3" target="tkt-nYlQ8RUQgV1p8vgq-28">
+        <mxCell id="tkt-nYlQ8RUQgV1p8vgq-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="tkt-nYlQ8RUQgV1p8vgq-3" target="tkt-nYlQ8RUQgV1p8vgq-28" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="tkt-nYlQ8RUQgV1p8vgq-3" value="&lt;span style=&quot;color: rgb(44, 62, 80); font-family: -apple-system, BlinkMacSystemFont, &amp;quot;Segoe UI&amp;quot;, Roboto, &amp;quot;Helvetica Neue&amp;quot;, Arial, &amp;quot;Noto Sans&amp;quot;, STHeiti, &amp;quot;Microsoft YaHei&amp;quot;, SimSun, sans-serif, &amp;quot;Apple Color Emoji&amp;quot;, &amp;quot;Segoe UI Emoji&amp;quot;, &amp;quot;Segoe UI Symbol&amp;quot;, &amp;quot;Noto Color Emoji&amp;quot;; font-size: 17px; text-align: justify; background-color: rgb(255, 255, 255);&quot;&gt;加载\EFI\alinux\grubx64.efi&amp;nbsp;&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="tkt-nYlQ8RUQgV1p8vgq-3" value="&lt;span style=&quot;color: rgb(44, 62, 80); font-family: -apple-system, BlinkMacSystemFont, &amp;quot;Segoe UI&amp;quot;, Roboto, &amp;quot;Helvetica Neue&amp;quot;, Arial, &amp;quot;Noto Sans&amp;quot;, STHeiti, &amp;quot;Microsoft YaHei&amp;quot;, SimSun, sans-serif, &amp;quot;Apple Color Emoji&amp;quot;, &amp;quot;Segoe UI Emoji&amp;quot;, &amp;quot;Segoe UI Symbol&amp;quot;, &amp;quot;Noto Color Emoji&amp;quot;; font-size: 17px; text-align: justify; background-color: rgb(255, 255, 255);&quot;&gt;加载\EFI\alinux\grubx64.efi&amp;nbsp;&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="-413" y="940" width="270" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="tkt-nYlQ8RUQgV1p8vgq-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.541;entryY=0.033;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="mZBOsqE5cRWJT8c39Yzn-2" target="tkt-nYlQ8RUQgV1p8vgq-3">
+        <mxCell id="tkt-nYlQ8RUQgV1p8vgq-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.541;entryY=0.033;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="mZBOsqE5cRWJT8c39Yzn-2" target="tkt-nYlQ8RUQgV1p8vgq-3" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="tkt-nYlQ8RUQgV1p8vgq-5" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;否： 加载second stage bootloader&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="tkt-nYlQ8RUQgV1p8vgq-5" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;否： 加载second stage bootloader&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="-520" y="770" width="320" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="tkt-nYlQ8RUQgV1p8vgq-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="tkt-nYlQ8RUQgV1p8vgq-6" target="tkt-nYlQ8RUQgV1p8vgq-8">
+        <mxCell id="tkt-nYlQ8RUQgV1p8vgq-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="tkt-nYlQ8RUQgV1p8vgq-6" target="tkt-nYlQ8RUQgV1p8vgq-8" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="tkt-nYlQ8RUQgV1p8vgq-6" value="&lt;span style=&quot;color: rgb(44, 62, 80); font-family: -apple-system, BlinkMacSystemFont, &amp;quot;Segoe UI&amp;quot;, Roboto, &amp;quot;Helvetica Neue&amp;quot;, Arial, &amp;quot;Noto Sans&amp;quot;, STHeiti, &amp;quot;Microsoft YaHei&amp;quot;, SimSun, sans-serif, &amp;quot;Apple Color Emoji&amp;quot;, &amp;quot;Segoe UI Emoji&amp;quot;, &amp;quot;Segoe UI Symbol&amp;quot;, &amp;quot;Noto Color Emoji&amp;quot;; font-size: 17px; text-align: justify; background-color: rgb(255, 255, 255);&quot;&gt;加载\EFI\boot\fbx64.efi&amp;nbsp;&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="tkt-nYlQ8RUQgV1p8vgq-6" value="&lt;span style=&quot;color: rgb(44, 62, 80); font-family: -apple-system, BlinkMacSystemFont, &amp;quot;Segoe UI&amp;quot;, Roboto, &amp;quot;Helvetica Neue&amp;quot;, Arial, &amp;quot;Noto Sans&amp;quot;, STHeiti, &amp;quot;Microsoft YaHei&amp;quot;, SimSun, sans-serif, &amp;quot;Apple Color Emoji&amp;quot;, &amp;quot;Segoe UI Emoji&amp;quot;, &amp;quot;Segoe UI Symbol&amp;quot;, &amp;quot;Noto Color Emoji&amp;quot;; font-size: 17px; text-align: justify; background-color: rgb(255, 255, 255);&quot;&gt;加载\EFI\boot\fbx64.efi&amp;nbsp;&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="-908.5" y="960" width="270" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="tkt-nYlQ8RUQgV1p8vgq-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="tkt-nYlQ8RUQgV1p8vgq-8" target="tkt-nYlQ8RUQgV1p8vgq-12">
+        <mxCell id="tkt-nYlQ8RUQgV1p8vgq-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="tkt-nYlQ8RUQgV1p8vgq-8" target="tkt-nYlQ8RUQgV1p8vgq-12" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="tkt-nYlQ8RUQgV1p8vgq-8" value="&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;font face=&quot;-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, STHeiti, Microsoft YaHei, SimSun, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji&quot; color=&quot;#2c3e50&quot;&gt;&lt;span style=&quot;font-size: 17px; background-color: rgb(255, 255, 255);&quot;&gt;遍历/EFI/boot/的同级目录/EFI/alinux/，&lt;/span&gt;&lt;/font&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); color: rgb(44, 62, 80); font-family: -apple-system, BlinkMacSystemFont, &amp;quot;Segoe UI&amp;quot;, Roboto, &amp;quot;Helvetica Neue&amp;quot;, Arial, &amp;quot;Noto Sans&amp;quot;, STHeiti, &amp;quot;Microsoft YaHei&amp;quot;, SimSun, sans-serif, &amp;quot;Apple Color Emoji&amp;quot;, &amp;quot;Segoe UI Emoji&amp;quot;, &amp;quot;Segoe UI Symbol&amp;quot;, &amp;quot;Noto Color Emoji&amp;quot;; font-size: 17px;&quot;&gt;自动创建启动选项，并修改BootOrder变量(将启动项设置为\EFI\alinux\shimx64.efi)&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="tkt-nYlQ8RUQgV1p8vgq-8" value="&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;font face=&quot;-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, STHeiti, Microsoft YaHei, SimSun, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji&quot; color=&quot;#2c3e50&quot;&gt;&lt;span style=&quot;font-size: 17px; background-color: rgb(255, 255, 255);&quot;&gt;遍历/EFI/boot/的同级目录/EFI/alinux/，&lt;/span&gt;&lt;/font&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); color: rgb(44, 62, 80); font-family: -apple-system, BlinkMacSystemFont, &amp;quot;Segoe UI&amp;quot;, Roboto, &amp;quot;Helvetica Neue&amp;quot;, Arial, &amp;quot;Noto Sans&amp;quot;, STHeiti, &amp;quot;Microsoft YaHei&amp;quot;, SimSun, sans-serif, &amp;quot;Apple Color Emoji&amp;quot;, &amp;quot;Segoe UI Emoji&amp;quot;, &amp;quot;Segoe UI Symbol&amp;quot;, &amp;quot;Noto Color Emoji&amp;quot;; font-size: 17px;&quot;&gt;自动创建启动选项，并修改BootOrder变量(将启动项设置为\EFI\alinux\shimx64.efi)&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="-908.5" y="1060" width="270" height="120" as="geometry" />
         </mxCell>
-        <mxCell id="tkt-nYlQ8RUQgV1p8vgq-9" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;是&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="tkt-nYlQ8RUQgV1p8vgq-9" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;是&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="-838.9" y="920" width="40" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="tkt-nYlQ8RUQgV1p8vgq-10" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;这里需要注意的是，这里会在当前bios加载路径下去寻找grubx64.efi，也就是说走到这个流程说明加载的efi路径是\EFI\alinux\shimx64.efi&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="tkt-nYlQ8RUQgV1p8vgq-10" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;这里需要注意的是，这里会在当前bios加载路径下去寻找grubx64.efi，也就是说走到这个流程说明加载的efi路径是\EFI\alinux\shimx64.efi&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="-595" y="870" width="320" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="tkt-nYlQ8RUQgV1p8vgq-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="tkt-nYlQ8RUQgV1p8vgq-12" target="tkt-nYlQ8RUQgV1p8vgq-17">
+        <mxCell id="tkt-nYlQ8RUQgV1p8vgq-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="tkt-nYlQ8RUQgV1p8vgq-12" target="tkt-nYlQ8RUQgV1p8vgq-17" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="tkt-nYlQ8RUQgV1p8vgq-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="tkt-nYlQ8RUQgV1p8vgq-12" target="tkt-nYlQ8RUQgV1p8vgq-21">
+        <mxCell id="tkt-nYlQ8RUQgV1p8vgq-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="tkt-nYlQ8RUQgV1p8vgq-12" target="tkt-nYlQ8RUQgV1p8vgq-21" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="tkt-nYlQ8RUQgV1p8vgq-12" value="" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="tkt-nYlQ8RUQgV1p8vgq-12" value="" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="-1050" y="1220" width="553" height="130" as="geometry" />
         </mxCell>
-        <mxCell id="tkt-nYlQ8RUQgV1p8vgq-13" value="&lt;span style=&quot;font-size: 23px;&quot;&gt;TPM是否enable&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="tkt-nYlQ8RUQgV1p8vgq-13" value="&lt;span style=&quot;font-size: 23px;&quot;&gt;TPM是否enable&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="-918.5" y="1265" width="300" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="tkt-nYlQ8RUQgV1p8vgq-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="tkt-nYlQ8RUQgV1p8vgq-14" target="mZBOsqE5cRWJT8c39Yzn-2">
+        <mxCell id="tkt-nYlQ8RUQgV1p8vgq-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="tkt-nYlQ8RUQgV1p8vgq-14" target="mZBOsqE5cRWJT8c39Yzn-2" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="tkt-nYlQ8RUQgV1p8vgq-14" value="&lt;span style=&quot;color: rgb(44, 62, 80); font-family: -apple-system, BlinkMacSystemFont, &amp;quot;Segoe UI&amp;quot;, Roboto, &amp;quot;Helvetica Neue&amp;quot;, Arial, &amp;quot;Noto Sans&amp;quot;, STHeiti, &amp;quot;Microsoft YaHei&amp;quot;, SimSun, sans-serif, &amp;quot;Apple Color Emoji&amp;quot;, &amp;quot;Segoe UI Emoji&amp;quot;, &amp;quot;Segoe UI Symbol&amp;quot;, &amp;quot;Noto Color Emoji&amp;quot;; font-size: 17px; text-align: justify; background-color: rgb(255, 255, 255);&quot;&gt;BIOS加载bootloader(EFI)&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="tkt-nYlQ8RUQgV1p8vgq-14" value="&lt;span style=&quot;color: rgb(44, 62, 80); font-family: -apple-system, BlinkMacSystemFont, &amp;quot;Segoe UI&amp;quot;, Roboto, &amp;quot;Helvetica Neue&amp;quot;, Arial, &amp;quot;Noto Sans&amp;quot;, STHeiti, &amp;quot;Microsoft YaHei&amp;quot;, SimSun, sans-serif, &amp;quot;Apple Color Emoji&amp;quot;, &amp;quot;Segoe UI Emoji&amp;quot;, &amp;quot;Segoe UI Symbol&amp;quot;, &amp;quot;Noto Color Emoji&amp;quot;; font-size: 17px; text-align: justify; background-color: rgb(255, 255, 255);&quot;&gt;BIOS加载bootloader(EFI)&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="-908.5" y="610" width="270" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="tkt-nYlQ8RUQgV1p8vgq-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="tkt-nYlQ8RUQgV1p8vgq-17" target="tkt-nYlQ8RUQgV1p8vgq-14">
+        <mxCell id="tkt-nYlQ8RUQgV1p8vgq-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" parent="1" source="tkt-nYlQ8RUQgV1p8vgq-17" target="tkt-nYlQ8RUQgV1p8vgq-14" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="tkt-nYlQ8RUQgV1p8vgq-17" value="&lt;span style=&quot;color: rgb(44, 62, 80); font-family: -apple-system, BlinkMacSystemFont, &amp;quot;Segoe UI&amp;quot;, Roboto, &amp;quot;Helvetica Neue&amp;quot;, Arial, &amp;quot;Noto Sans&amp;quot;, STHeiti, &amp;quot;Microsoft YaHei&amp;quot;, SimSun, sans-serif, &amp;quot;Apple Color Emoji&amp;quot;, &amp;quot;Segoe UI Emoji&amp;quot;, &amp;quot;Segoe UI Symbol&amp;quot;, &amp;quot;Noto Color Emoji&amp;quot;; font-size: 17px; text-align: justify; background-color: rgb(255, 255, 255);&quot;&gt;加载\EFI\alinux\shimx64.efi&amp;nbsp;&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="tkt-nYlQ8RUQgV1p8vgq-17" value="&lt;span style=&quot;color: rgb(44, 62, 80); font-family: -apple-system, BlinkMacSystemFont, &amp;quot;Segoe UI&amp;quot;, Roboto, &amp;quot;Helvetica Neue&amp;quot;, Arial, &amp;quot;Noto Sans&amp;quot;, STHeiti, &amp;quot;Microsoft YaHei&amp;quot;, SimSun, sans-serif, &amp;quot;Apple Color Emoji&amp;quot;, &amp;quot;Segoe UI Emoji&amp;quot;, &amp;quot;Segoe UI Symbol&amp;quot;, &amp;quot;Noto Color Emoji&amp;quot;; font-size: 17px; text-align: justify; background-color: rgb(255, 255, 255);&quot;&gt;加载\EFI\alinux\shimx64.efi&amp;nbsp;&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="-1350" y="1255" width="270" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="tkt-nYlQ8RUQgV1p8vgq-20" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;否&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="tkt-nYlQ8RUQgV1p8vgq-20" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;否&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="-1070" y="1235" width="40" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="tkt-nYlQ8RUQgV1p8vgq-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="tkt-nYlQ8RUQgV1p8vgq-21" target="tkt-nYlQ8RUQgV1p8vgq-17">
+        <mxCell id="tkt-nYlQ8RUQgV1p8vgq-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="tkt-nYlQ8RUQgV1p8vgq-21" target="tkt-nYlQ8RUQgV1p8vgq-17" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="tkt-nYlQ8RUQgV1p8vgq-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="tkt-nYlQ8RUQgV1p8vgq-21" target="tkt-nYlQ8RUQgV1p8vgq-32">
+        <mxCell id="tkt-nYlQ8RUQgV1p8vgq-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="tkt-nYlQ8RUQgV1p8vgq-21" target="tkt-nYlQ8RUQgV1p8vgq-32" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="tkt-nYlQ8RUQgV1p8vgq-21" value="" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="tkt-nYlQ8RUQgV1p8vgq-21" value="" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="-1050" y="1400" width="553" height="110" as="geometry" />
         </mxCell>
-        <mxCell id="tkt-nYlQ8RUQgV1p8vgq-22" value="&lt;span style=&quot;font-size: 23px;&quot;&gt;BIOS是是否有no_reboot变量&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="tkt-nYlQ8RUQgV1p8vgq-22" value="&lt;span style=&quot;font-size: 23px;&quot;&gt;BIOS是是否有no_reboot变量&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="-908.5" y="1440" width="300" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="tkt-nYlQ8RUQgV1p8vgq-26" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;是&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="tkt-nYlQ8RUQgV1p8vgq-26" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;是&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="-1170" y="1480" width="40" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="tkt-nYlQ8RUQgV1p8vgq-28" value="&lt;span style=&quot;color: rgb(44, 62, 80); font-family: -apple-system, BlinkMacSystemFont, &amp;quot;Segoe UI&amp;quot;, Roboto, &amp;quot;Helvetica Neue&amp;quot;, Arial, &amp;quot;Noto Sans&amp;quot;, STHeiti, &amp;quot;Microsoft YaHei&amp;quot;, SimSun, sans-serif, &amp;quot;Apple Color Emoji&amp;quot;, &amp;quot;Segoe UI Emoji&amp;quot;, &amp;quot;Segoe UI Symbol&amp;quot;, &amp;quot;Noto Color Emoji&amp;quot;; font-size: 17px; text-align: justify; background-color: rgb(255, 255, 255);&quot;&gt;OS&lt;br&gt;&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+        <mxCell id="tkt-nYlQ8RUQgV1p8vgq-28" value="&lt;span style=&quot;color: rgb(44, 62, 80); font-family: -apple-system, BlinkMacSystemFont, &amp;quot;Segoe UI&amp;quot;, Roboto, &amp;quot;Helvetica Neue&amp;quot;, Arial, &amp;quot;Noto Sans&amp;quot;, STHeiti, &amp;quot;Microsoft YaHei&amp;quot;, SimSun, sans-serif, &amp;quot;Apple Color Emoji&amp;quot;, &amp;quot;Segoe UI Emoji&amp;quot;, &amp;quot;Segoe UI Symbol&amp;quot;, &amp;quot;Noto Color Emoji&amp;quot;; font-size: 17px; text-align: justify; background-color: rgb(255, 255, 255);&quot;&gt;OS&lt;br&gt;&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
           <mxGeometry x="-413" y="1070" width="270" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="tkt-nYlQ8RUQgV1p8vgq-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="tkt-nYlQ8RUQgV1p8vgq-32" target="tkt-nYlQ8RUQgV1p8vgq-17">
+        <mxCell id="tkt-nYlQ8RUQgV1p8vgq-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="tkt-nYlQ8RUQgV1p8vgq-32" target="tkt-nYlQ8RUQgV1p8vgq-17" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="tkt-nYlQ8RUQgV1p8vgq-39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="tkt-nYlQ8RUQgV1p8vgq-32" target="tkt-nYlQ8RUQgV1p8vgq-38">
+        <mxCell id="tkt-nYlQ8RUQgV1p8vgq-39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="tkt-nYlQ8RUQgV1p8vgq-32" target="tkt-nYlQ8RUQgV1p8vgq-38" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="tkt-nYlQ8RUQgV1p8vgq-43" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="tkt-nYlQ8RUQgV1p8vgq-32" target="tkt-nYlQ8RUQgV1p8vgq-42">
+        <mxCell id="tkt-nYlQ8RUQgV1p8vgq-43" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="tkt-nYlQ8RUQgV1p8vgq-32" target="tkt-nYlQ8RUQgV1p8vgq-42" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="tkt-nYlQ8RUQgV1p8vgq-32" value="" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="tkt-nYlQ8RUQgV1p8vgq-32" value="" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="-1050" y="1550" width="553" height="240" as="geometry" />
         </mxCell>
-        <mxCell id="tkt-nYlQ8RUQgV1p8vgq-33" value="&lt;span style=&quot;font-size: 23px;&quot;&gt;用户交互流程&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="tkt-nYlQ8RUQgV1p8vgq-33" value="&lt;span style=&quot;font-size: 23px;&quot;&gt;用户交互流程&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="-923.5" y="1580" width="300" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="tkt-nYlQ8RUQgV1p8vgq-34" value="&lt;h1 style=&quot;margin-top: 0px; line-height: 100%;&quot;&gt;&lt;span style=&quot;background-color: initial; font-size: 12px; font-weight: normal;&quot;&gt;选项1： 重启&lt;/span&gt;&lt;/h1&gt;&lt;h1 style=&quot;margin-top: 0px; line-height: 100%;&quot;&gt;&lt;span style=&quot;background-color: initial; font-size: 12px; font-weight: normal;&quot;&gt;选项2：继续启动&lt;/span&gt;&lt;/h1&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial; font-size: 12px; font-weight: normal;&quot;&gt;选项3：总是继续启动&lt;/span&gt;&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+        <mxCell id="tkt-nYlQ8RUQgV1p8vgq-34" value="&lt;h1 style=&quot;margin-top: 0px; line-height: 100%;&quot;&gt;&lt;span style=&quot;background-color: initial; font-size: 12px; font-weight: normal;&quot;&gt;选项1： 重启&lt;/span&gt;&lt;/h1&gt;&lt;h1 style=&quot;margin-top: 0px; line-height: 100%;&quot;&gt;&lt;span style=&quot;background-color: initial; font-size: 12px; font-weight: normal;&quot;&gt;选项2：继续启动&lt;/span&gt;&lt;/h1&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial; font-size: 12px; font-weight: normal;&quot;&gt;选项3：总是继续启动&lt;/span&gt;&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="-827" y="1630" width="290" height="110" as="geometry" />
         </mxCell>
-        <mxCell id="tkt-nYlQ8RUQgV1p8vgq-36" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;选项2&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="tkt-nYlQ8RUQgV1p8vgq-36" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;选项2&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="-1200" y="1630" width="130" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="tkt-nYlQ8RUQgV1p8vgq-40" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="tkt-nYlQ8RUQgV1p8vgq-38" target="tkt-nYlQ8RUQgV1p8vgq-14">
+        <mxCell id="tkt-nYlQ8RUQgV1p8vgq-40" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="tkt-nYlQ8RUQgV1p8vgq-38" target="tkt-nYlQ8RUQgV1p8vgq-14" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="-355" y="1930" />
@@ -175,20 +175,26 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="tkt-nYlQ8RUQgV1p8vgq-38" value="&lt;span style=&quot;color: rgb(44, 62, 80); font-family: -apple-system, BlinkMacSystemFont, &amp;quot;Segoe UI&amp;quot;, Roboto, &amp;quot;Helvetica Neue&amp;quot;, Arial, &amp;quot;Noto Sans&amp;quot;, STHeiti, &amp;quot;Microsoft YaHei&amp;quot;, SimSun, sans-serif, &amp;quot;Apple Color Emoji&amp;quot;, &amp;quot;Segoe UI Emoji&amp;quot;, &amp;quot;Segoe UI Symbol&amp;quot;, &amp;quot;Noto Color Emoji&amp;quot;; font-size: 17px; text-align: justify; background-color: rgb(255, 255, 255);&quot;&gt;重启&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+        <mxCell id="tkt-nYlQ8RUQgV1p8vgq-38" value="&lt;span style=&quot;color: rgb(44, 62, 80); font-family: -apple-system, BlinkMacSystemFont, &amp;quot;Segoe UI&amp;quot;, Roboto, &amp;quot;Helvetica Neue&amp;quot;, Arial, &amp;quot;Noto Sans&amp;quot;, STHeiti, &amp;quot;Microsoft YaHei&amp;quot;, SimSun, sans-serif, &amp;quot;Apple Color Emoji&amp;quot;, &amp;quot;Segoe UI Emoji&amp;quot;, &amp;quot;Segoe UI Symbol&amp;quot;, &amp;quot;Noto Color Emoji&amp;quot;; font-size: 17px; text-align: justify; background-color: rgb(255, 255, 255);&quot;&gt;重启&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
           <mxGeometry x="-490" y="1830" width="270" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="tkt-nYlQ8RUQgV1p8vgq-41" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;选项1或者超时&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="tkt-nYlQ8RUQgV1p8vgq-41" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;选项1或者超时&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="-490" y="1630" width="130" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="tkt-nYlQ8RUQgV1p8vgq-44" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="tkt-nYlQ8RUQgV1p8vgq-42" target="tkt-nYlQ8RUQgV1p8vgq-17">
+        <mxCell id="tkt-nYlQ8RUQgV1p8vgq-44" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="tkt-nYlQ8RUQgV1p8vgq-42" target="tkt-nYlQ8RUQgV1p8vgq-17" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="tkt-nYlQ8RUQgV1p8vgq-42" value="&lt;span style=&quot;color: rgb(44, 62, 80); font-family: -apple-system, BlinkMacSystemFont, &amp;quot;Segoe UI&amp;quot;, Roboto, &amp;quot;Helvetica Neue&amp;quot;, Arial, &amp;quot;Noto Sans&amp;quot;, STHeiti, &amp;quot;Microsoft YaHei&amp;quot;, SimSun, sans-serif, &amp;quot;Apple Color Emoji&amp;quot;, &amp;quot;Segoe UI Emoji&amp;quot;, &amp;quot;Segoe UI Symbol&amp;quot;, &amp;quot;Noto Color Emoji&amp;quot;; font-size: 17px; text-align: justify; background-color: rgb(255, 255, 255);&quot;&gt;设置默认启动项为：\EFI\alinux\shimx64.efi&amp;nbsp;&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="tkt-nYlQ8RUQgV1p8vgq-42" value="&lt;span style=&quot;color: rgb(44, 62, 80); font-family: -apple-system, BlinkMacSystemFont, &amp;quot;Segoe UI&amp;quot;, Roboto, &amp;quot;Helvetica Neue&amp;quot;, Arial, &amp;quot;Noto Sans&amp;quot;, STHeiti, &amp;quot;Microsoft YaHei&amp;quot;, SimSun, sans-serif, &amp;quot;Apple Color Emoji&amp;quot;, &amp;quot;Segoe UI Emoji&amp;quot;, &amp;quot;Segoe UI Symbol&amp;quot;, &amp;quot;Noto Color Emoji&amp;quot;; font-size: 17px; text-align: justify; background-color: rgb(255, 255, 255);&quot;&gt;设置默认启动项为：\EFI\alinux\shimx64.efi&amp;nbsp;&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="-908.5" y="1830" width="270" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="tkt-nYlQ8RUQgV1p8vgq-45" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;否&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="tkt-nYlQ8RUQgV1p8vgq-45" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;否&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="-760" y="1520" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="J4t0WMq6A24Ny8D8Oqep-1" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;用户交互流程其实是为了避免进入循环重启&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 15px;&quot;&gt;https://github.com/rhboot/shim/pull/419&lt;/span&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-630" y="1540" width="320" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="J4t0WMq6A24Ny8D8Oqep-2" value="&lt;span style=&quot;font-size: 15px;&quot;&gt;参考：&lt;/span&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 15px;&quot;&gt;1、&lt;/span&gt;&lt;/font&gt;&lt;span style=&quot;background-color: initial; font-size: 15px;&quot;&gt;https://github.com/rhboot/shim/pull/89&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 15px;&quot;&gt;2、https://uapi-group.org/specifications/specs/linux_tpm_pcr_registry/&lt;/span&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-630" y="1180" width="570" height="70" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

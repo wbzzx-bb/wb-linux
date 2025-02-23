@@ -28,6 +28,9 @@
         <mxCell id="PAXVkRBCryVE_3M80UEs-8" value="ELF Core headers" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
           <mxGeometry x="351" y="120" width="150" height="20" as="geometry" />
         </mxCell>
+        <mxCell id="PAXVkRBCryVE_3M80UEs-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="PAXVkRBCryVE_3M80UEs-9" target="PAXVkRBCryVE_3M80UEs-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="PAXVkRBCryVE_3M80UEs-9" value="Regular Kernel" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
           <mxGeometry x="351" y="280" width="150" height="60" as="geometry" />
         </mxCell>
@@ -52,33 +55,37 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="PAXVkRBCryVE_3M80UEs-16" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="612" y="100" width="150" height="260" as="geometry" />
+          <mxGeometry x="641" y="100" width="150" height="260" as="geometry" />
         </mxCell>
         <mxCell id="PAXVkRBCryVE_3M80UEs-17" value="ELF Core headers" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
-          <mxGeometry x="612" y="120" width="150" height="20" as="geometry" />
+          <mxGeometry x="641" y="120" width="150" height="20" as="geometry" />
         </mxCell>
         <mxCell id="PAXVkRBCryVE_3M80UEs-18" value="Regular Kernel" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;" vertex="1" parent="1">
-          <mxGeometry x="612" y="280" width="150" height="60" as="geometry" />
+          <mxGeometry x="641" y="280" width="150" height="60" as="geometry" />
         </mxCell>
         <mxCell id="PAXVkRBCryVE_3M80UEs-19" value="Initramfs" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
-          <mxGeometry x="612" y="140" width="150" height="20" as="geometry" />
+          <mxGeometry x="641" y="140" width="150" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="PAXVkRBCryVE_3M80UEs-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="PAXVkRBCryVE_3M80UEs-20" target="PAXVkRBCryVE_3M80UEs-31">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="PAXVkRBCryVE_3M80UEs-20" value="Capture Kernel" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
-          <mxGeometry x="612" y="160" width="150" height="20" as="geometry" />
+          <mxGeometry x="641" y="160" width="150" height="20" as="geometry" />
         </mxCell>
         <mxCell id="PAXVkRBCryVE_3M80UEs-21" value="Setup Code" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
-          <mxGeometry x="612" y="180" width="150" height="20" as="geometry" />
+          <mxGeometry x="641" y="180" width="150" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="PAXVkRBCryVE_3M80UEs-22" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;exitX=0.983;exitY=0.528;exitDx=0;exitDy=0;exitPerimeter=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" edge="1" parent="1">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="500.99999999999983" y="240.27999999999997" as="sourcePoint" />
-            <mxPoint x="610" y="240" as="targetPoint" />
-          </mxGeometry>
+        <mxCell id="PAXVkRBCryVE_3M80UEs-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="PAXVkRBCryVE_3M80UEs-24" target="PAXVkRBCryVE_3M80UEs-20">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="PAXVkRBCryVE_3M80UEs-23" value="&lt;font style=&quot;color: rgb(255, 52, 45);&quot;&gt;&lt;b&gt;Crash&lt;/b&gt;&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="PAXVkRBCryVE_3M80UEs-22">
-          <mxGeometry x="0.1337" y="-2" relative="1" as="geometry">
-            <mxPoint x="-10" y="-29" as="offset" />
-          </mxGeometry>
+        <mxCell id="PAXVkRBCryVE_3M80UEs-24" value="__crash_kexec()&lt;div&gt;|&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;machine_kexec()&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="520" y="210" width="110" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="PAXVkRBCryVE_3M80UEs-30" value="&lt;font style=&quot;color: rgb(255, 52, 45);&quot;&gt;&lt;b&gt;Crash&lt;/b&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="545" y="110" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="PAXVkRBCryVE_3M80UEs-31" value="kdump-tool-dump&lt;div&gt;|&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;reboot()&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="810" y="200" width="110" height="70" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

@@ -92,7 +92,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="79YcInousqaeR84DtTxY" name="linux-0.11">
-    <mxGraphModel dx="4419" dy="3813" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="6839" dy="5103" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -114,7 +114,7 @@
         <mxCell id="NIAn77_WEEreXh-wrMdq-3" value="0x90000" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=center;" vertex="1" parent="1">
           <mxGeometry x="100" y="10" width="100" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="NIAn77_WEEreXh-wrMdq-4" value="1、bios将硬盘启动区的512字节放到内存0x7c00处，然后跳过去执行&lt;div&gt;&lt;span style=&quot;text-wrap-mode: wrap;&quot;&gt;2、bootsector将自己从0x7c00处移动到0x9000处（为什么？ 低位的内存后续要放置kernel；为什么不一开始放置到0x9000？保持兼容&lt;/span&gt;&lt;span style=&quot;color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); text-wrap-mode: wrap; background-color: transparent;&quot;&gt;）&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;text-wrap-mode: wrap;&quot;&gt;3、bootsector.s从硬盘的第2个扇区开始读取4个扇区，加载到0x90200处&lt;/span&gt;&lt;span style=&quot;color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); text-wrap-mode: wrap; background-color: transparent;&quot;&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;4、bootsector从硬盘的第6个扇区开始，读取240个扇区，将system（包含head）加载到0x10000处&lt;span style=&quot;text-wrap-mode: wrap;&quot;&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;5、bootsector跳转到0x90200，加载setup&lt;/div&gt;&lt;div&gt;6、setup从bios中读取银盘、网卡、内存等信息，保存在0x90000处开始的位置&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=0;verticalAlign=top;align=left;whiteSpace=wrap;spacingTop=2;spacingBottom=2;" vertex="1" parent="1">
+        <mxCell id="NIAn77_WEEreXh-wrMdq-4" value="1、bios将硬盘启动区的512字节放到内存0x7c00处，然后跳过去执行&lt;div&gt;&lt;span style=&quot;text-wrap-mode: wrap;&quot;&gt;2、bootsector将自己从0x7c00处移动到0x9000处（为什么？ 低位的内存后续要放置kernel；为什么不一开始放置到0x9000？保持兼容&lt;/span&gt;&lt;span style=&quot;color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); text-wrap-mode: wrap; background-color: transparent;&quot;&gt;）&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;text-wrap-mode: wrap;&quot;&gt;3、bootsector.s从硬盘的第2个扇区开始读取4个扇区，加载到0x90200处&lt;/span&gt;&lt;span style=&quot;color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); text-wrap-mode: wrap; background-color: transparent;&quot;&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;4、bootsector从硬盘的第6个扇区开始，读取240个扇区，将system（包含head）加载到0x10000处&lt;span style=&quot;text-wrap-mode: wrap;&quot;&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;5、bootsector跳转到0x90200，加载setup&lt;/div&gt;&lt;div&gt;6、setup从bios中读取银盘、网卡、内存等信息，保存在0x90000处开始的位置&lt;/div&gt;&lt;div&gt;7、将system从0x10000处移动到0x00000处&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=0;verticalAlign=top;align=left;whiteSpace=wrap;spacingTop=2;spacingBottom=2;" vertex="1" parent="1">
           <mxGeometry x="-960" y="220" width="760" height="330" as="geometry" />
         </mxCell>
         <mxCell id="YU3C0e4UpIIsil7pL2Qv-3" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
@@ -138,16 +138,16 @@
         <mxCell id="YU3C0e4UpIIsil7pL2Qv-13" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="70" y="59.2" as="sourcePoint" />
-            <mxPoint x="1780" y="59.2" as="targetPoint" />
+            <mxPoint x="2560" y="59" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="YU3C0e4UpIIsil7pL2Qv-14" value="&lt;b&gt;&lt;font style=&quot;font-size: 27px;&quot;&gt;system&lt;/font&gt;&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;fillWeight=4;hachureGap=8;hachureAngle=45;fillColor=#f5f5f5;sketch=1;strokeColor=#666666;fontColor=#333333;" vertex="1" parent="1">
-          <mxGeometry x="880" y="200" width="310" height="420" as="geometry" />
+          <mxGeometry x="880" y="230" width="310" height="390" as="geometry" />
         </mxCell>
         <mxCell id="YU3C0e4UpIIsil7pL2Qv-1" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="60" y="620" as="sourcePoint" />
-            <mxPoint x="1770" y="620" as="targetPoint" />
+            <mxPoint x="2510" y="620" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="YU3C0e4UpIIsil7pL2Qv-12" value="&lt;b&gt;&lt;font style=&quot;font-size: 27px;&quot;&gt;head&lt;/font&gt;&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;fillWeight=4;hachureGap=8;hachureAngle=45;fillColor=#f5f5f5;sketch=1;strokeColor=#666666;fontColor=#333333;" vertex="1" parent="1">
@@ -157,7 +157,7 @@
           <mxGeometry x="80" y="580" width="100" height="40" as="geometry" />
         </mxCell>
         <mxCell id="YU3C0e4UpIIsil7pL2Qv-17" value="&lt;b&gt;&lt;font style=&quot;font-size: 27px;&quot;&gt;system&lt;/font&gt;&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;fillWeight=4;hachureGap=8;hachureAngle=45;fillColor=#f5f5f5;sketch=1;strokeColor=#666666;fontColor=#333333;" vertex="1" parent="1">
-          <mxGeometry x="1190" y="200" width="310" height="420" as="geometry" />
+          <mxGeometry x="1190" y="230" width="310" height="390" as="geometry" />
         </mxCell>
         <mxCell id="YU3C0e4UpIIsil7pL2Qv-18" value="&lt;b&gt;&lt;font style=&quot;font-size: 27px;&quot;&gt;head&lt;/font&gt;&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;fillWeight=4;hachureGap=8;hachureAngle=45;fillColor=#f5f5f5;sketch=1;strokeColor=#666666;fontColor=#333333;" vertex="1" parent="1">
           <mxGeometry x="1190" y="550" width="310" height="70" as="geometry" />
@@ -216,8 +216,32 @@
         <mxCell id="YU3C0e4UpIIsil7pL2Qv-7" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="60" y="-2" as="sourcePoint" />
-            <mxPoint x="1770" y="-2" as="targetPoint" />
+            <mxPoint x="2550" y="-2" as="targetPoint" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="5y_lSWkw9vLb_1eyxDIr-26" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1500" y="-610" width="310" height="1530" as="geometry" />
+        </mxCell>
+        <mxCell id="5y_lSWkw9vLb_1eyxDIr-27" value="&lt;b&gt;&lt;font style=&quot;font-size: 27px;&quot;&gt;setup&lt;/font&gt;&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;fillWeight=4;hachureGap=8;hachureAngle=45;fillColor=#d5e8d4;sketch=1;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="1500" y="-172" width="310" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="5y_lSWkw9vLb_1eyxDIr-28" value="&lt;b&gt;&lt;font style=&quot;font-size: 27px;&quot;&gt;system&lt;/font&gt;&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;fillWeight=4;hachureGap=8;hachureAngle=45;fillColor=#f5f5f5;sketch=1;strokeColor=#666666;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="1500" y="430" width="310" height="490" as="geometry" />
+        </mxCell>
+        <mxCell id="5y_lSWkw9vLb_1eyxDIr-29" value="&lt;b&gt;&lt;font style=&quot;font-size: 27px;&quot;&gt;head&lt;/font&gt;&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;fillWeight=4;hachureGap=8;hachureAngle=45;fillColor=#f5f5f5;sketch=1;strokeColor=#666666;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="1500" y="850" width="310" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="5y_lSWkw9vLb_1eyxDIr-30" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1810" y="-610" width="310" height="1530" as="geometry" />
+        </mxCell>
+        <mxCell id="5y_lSWkw9vLb_1eyxDIr-31" value="&lt;b&gt;&lt;font style=&quot;font-size: 27px;&quot;&gt;setup&lt;/font&gt;&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;fillWeight=4;hachureGap=8;hachureAngle=45;fillColor=#f5f5f5;sketch=1;strokeColor=#666666;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="1810" y="-172" width="310" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="5y_lSWkw9vLb_1eyxDIr-32" value="&lt;b&gt;&lt;font style=&quot;font-size: 27px;&quot;&gt;system&lt;/font&gt;&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;fillWeight=4;hachureGap=8;hachureAngle=45;fillColor=#d5e8d4;sketch=1;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="1810" y="430" width="310" height="490" as="geometry" />
+        </mxCell>
+        <mxCell id="5y_lSWkw9vLb_1eyxDIr-33" value="&lt;b&gt;&lt;font style=&quot;font-size: 27px;&quot;&gt;head&lt;/font&gt;&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;fillWeight=4;hachureGap=8;hachureAngle=45;fillColor=#d5e8d4;sketch=1;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="1810" y="850" width="310" height="70" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

@@ -114,11 +114,8 @@
         <mxCell id="NIAn77_WEEreXh-wrMdq-3" value="0x90000" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=center;" vertex="1" parent="1">
           <mxGeometry x="100" y="10" width="100" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="NIAn77_WEEreXh-wrMdq-4" value="1、bios将硬盘启动区的512字节放到内存0x7c00处，然后跳过去执行" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=top;align=left;" vertex="1" parent="1">
-          <mxGeometry x="-960" y="220" width="760" height="40" as="geometry" />
-        </mxCell>
-        <mxCell id="YU3C0e4UpIIsil7pL2Qv-2" value="2、bootsector将自己从0x7c00处移动到0x9000处（为什么？ 低位的内存后续要放置kernel；为什么不一开始放置到0x9000？保持兼容&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;）&lt;/span&gt;" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=top;align=left;whiteSpace=wrap;" vertex="1" parent="1">
-          <mxGeometry x="-960" y="270" width="750" height="80" as="geometry" />
+        <mxCell id="NIAn77_WEEreXh-wrMdq-4" value="1、bios将硬盘启动区的512字节放到内存0x7c00处，然后跳过去执行&lt;div&gt;&lt;span style=&quot;text-wrap-mode: wrap;&quot;&gt;2、bootsector将自己从0x7c00处移动到0x9000处（为什么？ 低位的内存后续要放置kernel；为什么不一开始放置到0x9000？保持兼容&lt;/span&gt;&lt;span style=&quot;color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); text-wrap-mode: wrap; background-color: transparent;&quot;&gt;）&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;text-wrap-mode: wrap;&quot;&gt;3、bootsector.s从硬盘的第2个扇区开始读取4个扇区，加载到0x90200处&lt;/span&gt;&lt;span style=&quot;color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); text-wrap-mode: wrap; background-color: transparent;&quot;&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;4、bootsector从硬盘的第6个扇区开始，读取240个扇区，将system（包含head）加载到0x10000处&lt;span style=&quot;text-wrap-mode: wrap;&quot;&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;5、bootsector跳转到0x90200，加载setup&lt;/div&gt;&lt;div&gt;6、setup从bios中读取银盘、网卡、内存等信息&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=0;verticalAlign=top;align=left;whiteSpace=wrap;spacingTop=2;spacingBottom=2;" vertex="1" parent="1">
+          <mxGeometry x="-960" y="220" width="760" height="330" as="geometry" />
         </mxCell>
         <mxCell id="YU3C0e4UpIIsil7pL2Qv-3" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="880" y="-610" width="310" height="1530" as="geometry" />
@@ -129,23 +126,11 @@
         <mxCell id="YU3C0e4UpIIsil7pL2Qv-5" value="&lt;b&gt;&lt;font style=&quot;font-size: 27px;&quot;&gt;setup&lt;/font&gt;&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;fillWeight=4;hachureGap=8;hachureAngle=45;fillColor=#f5f5f5;sketch=1;strokeColor=#666666;fontColor=#333333;" vertex="1" parent="1">
           <mxGeometry x="880" y="-172" width="310" height="170" as="geometry" />
         </mxCell>
-        <mxCell id="YU3C0e4UpIIsil7pL2Qv-6" value="3、bootsector.s从硬盘的第2个扇区开始读取4个扇区，加载到0x90200处" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=top;align=left;whiteSpace=wrap;" vertex="1" parent="1">
-          <mxGeometry x="-960" y="350" width="750" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="YU3C0e4UpIIsil7pL2Qv-7" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="60" y="-2" as="sourcePoint" />
-            <mxPoint x="1770" y="-2" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
         <mxCell id="YU3C0e4UpIIsil7pL2Qv-8" value="0x90200" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=center;" vertex="1" parent="1">
           <mxGeometry x="90" y="-60" width="100" height="40" as="geometry" />
         </mxCell>
         <mxCell id="YU3C0e4UpIIsil7pL2Qv-9" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="1190" y="-610" width="310" height="1530" as="geometry" />
-        </mxCell>
-        <mxCell id="YU3C0e4UpIIsil7pL2Qv-10" value="&lt;b&gt;&lt;font style=&quot;font-size: 27px;&quot;&gt;bootsector&lt;/font&gt;&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;fillWeight=4;hachureGap=8;hachureAngle=45;fillColor=#f5f5f5;sketch=1;strokeColor=#666666;fontColor=#333333;" vertex="1" parent="1">
-          <mxGeometry x="1190" width="310" height="60" as="geometry" />
         </mxCell>
         <mxCell id="YU3C0e4UpIIsil7pL2Qv-11" value="&lt;b&gt;&lt;font style=&quot;font-size: 27px;&quot;&gt;setup&lt;/font&gt;&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;fillWeight=4;hachureGap=8;hachureAngle=45;fillColor=#d5e8d4;sketch=1;strokeColor=#82b366;" vertex="1" parent="1">
           <mxGeometry x="1190" y="-172" width="310" height="170" as="geometry" />
@@ -170,9 +155,6 @@
         </mxCell>
         <mxCell id="YU3C0e4UpIIsil7pL2Qv-15" value="0x10000" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=center;" vertex="1" parent="1">
           <mxGeometry x="80" y="580" width="100" height="40" as="geometry" />
-        </mxCell>
-        <mxCell id="YU3C0e4UpIIsil7pL2Qv-16" value="4、bootsector从硬盘的第6个扇区开始，读取240个扇区，将system（包含head）加载到0x10000处" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=top;align=left;whiteSpace=wrap;" vertex="1" parent="1">
-          <mxGeometry x="-955" y="450" width="750" height="80" as="geometry" />
         </mxCell>
         <mxCell id="YU3C0e4UpIIsil7pL2Qv-17" value="&lt;b&gt;&lt;font style=&quot;font-size: 27px;&quot;&gt;system&lt;/font&gt;&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;fillWeight=4;hachureGap=8;hachureAngle=45;fillColor=#f5f5f5;sketch=1;strokeColor=#666666;fontColor=#333333;" vertex="1" parent="1">
           <mxGeometry x="1190" y="200" width="310" height="420" as="geometry" />
@@ -230,6 +212,12 @@
         </mxCell>
         <mxCell id="5y_lSWkw9vLb_1eyxDIr-21" value="&lt;font style=&quot;font-size: 23px;&quot;&gt;240个扇区&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
           <mxGeometry x="-520" y="-1190" width="220" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="YU3C0e4UpIIsil7pL2Qv-7" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="60" y="-2" as="sourcePoint" />
+            <mxPoint x="1770" y="-2" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>

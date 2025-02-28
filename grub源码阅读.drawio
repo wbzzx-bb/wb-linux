@@ -92,7 +92,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="79YcInousqaeR84DtTxY" name="linux-0.11">
-    <mxGraphModel dx="3958" dy="3567" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="4419" dy="3813" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -127,7 +127,7 @@
           <mxGeometry x="880" y="-172" width="310" height="170" as="geometry" />
         </mxCell>
         <mxCell id="YU3C0e4UpIIsil7pL2Qv-8" value="0x90200" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=center;" vertex="1" parent="1">
-          <mxGeometry x="90" y="-60" width="100" height="40" as="geometry" />
+          <mxGeometry x="100" y="-60" width="100" height="40" as="geometry" />
         </mxCell>
         <mxCell id="YU3C0e4UpIIsil7pL2Qv-9" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="1190" y="-610" width="310" height="1530" as="geometry" />

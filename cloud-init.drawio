@@ -280,6 +280,21 @@
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="pkm5B92RHEHxYwR7calL-1" value="&lt;span style=&quot;font-size: 20px;&quot;&gt;&lt;b&gt;init-local&lt;/b&gt;&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="230" y="160" width="220" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ZiPg44uoUR1J1rIo8okd-1" value="&lt;span style=&quot;font-size: 20px;&quot;&gt;&lt;b&gt;check-cache&lt;/b&gt;&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="550" y="50" width="403" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ZiPg44uoUR1J1rIo8okd-2" value="&lt;span style=&quot;font-size: 20px;&quot;&gt;&lt;b&gt;search-AliYun2Local&lt;/b&gt;&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="550" y="160" width="403" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ZiPg44uoUR1J1rIo8okd-3" value="&lt;span style=&quot;font-size: 20px;&quot;&gt;&lt;b&gt;search-AliYun2Local&lt;/b&gt;&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="530" y="530" width="403" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="j_qzdhmTrUuMT79mAP8w-1" value="&lt;span style=&quot;font-size: 15px;&quot;&gt;中间做了机头网卡初始化&lt;/span&gt;" style="text;html=1;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1000" y="120" width="270" height="30" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>

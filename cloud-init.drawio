@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36" version="26.1.1" pages="2">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36" version="26.1.1" pages="3">
   <diagram name="第 1 页" id="itiNB120zXQE2V6H3Oyh">
     <mxGraphModel dx="3267" dy="2470" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -286,8 +286,11 @@
         <mxCell id="j_qzdhmTrUuMT79mAP8w-40" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="pkm5B92RHEHxYwR7calL-1" target="ZiPg44uoUR1J1rIo8okd-2">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
+        <mxCell id="0e8B1iJN9fCpFt2v5tSL-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="pkm5B92RHEHxYwR7calL-1" target="j_qzdhmTrUuMT79mAP8w-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="pkm5B92RHEHxYwR7calL-1" value="&lt;span style=&quot;font-size: 20px;&quot;&gt;&lt;b&gt;init-local&lt;/b&gt;&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="100" y="150" width="220" height="40" as="geometry" />
+          <mxGeometry x="91" y="150" width="220" height="40" as="geometry" />
         </mxCell>
         <mxCell id="ZiPg44uoUR1J1rIo8okd-1" value="&lt;span style=&quot;font-size: 20px;&quot;&gt;&lt;b&gt;check-cache&lt;/b&gt;&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="550" y="115" width="403" height="40" as="geometry" />
@@ -320,7 +323,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="j_qzdhmTrUuMT79mAP8w-2" value="&lt;span style=&quot;font-size: 20px;&quot;&gt;&lt;b&gt;init-network&lt;/b&gt;&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="100" y="770" width="220" height="40" as="geometry" />
+          <mxGeometry x="91" y="770" width="220" height="40" as="geometry" />
         </mxCell>
         <mxCell id="j_qzdhmTrUuMT79mAP8w-3" value="&lt;span style=&quot;font-size: 20px;&quot;&gt;&lt;span&gt;setup-datasource&lt;/span&gt;&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1" vertex="1" parent="1">
           <mxGeometry x="550" y="440" width="403" height="40" as="geometry" />
@@ -418,8 +421,11 @@
         <mxCell id="j_qzdhmTrUuMT79mAP8w-47" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="j_qzdhmTrUuMT79mAP8w-41" target="j_qzdhmTrUuMT79mAP8w-44">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
+        <mxCell id="0e8B1iJN9fCpFt2v5tSL-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="j_qzdhmTrUuMT79mAP8w-41" target="j_qzdhmTrUuMT79mAP8w-48">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="j_qzdhmTrUuMT79mAP8w-41" value="&lt;span style=&quot;font-size: 20px;&quot;&gt;&lt;b&gt;modules-config&lt;/b&gt;&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="100" y="1930" width="220" height="40" as="geometry" />
+          <mxGeometry x="90" y="1930" width="220" height="40" as="geometry" />
         </mxCell>
         <mxCell id="j_qzdhmTrUuMT79mAP8w-42" value="&lt;span style=&quot;font-size: 20px;&quot;&gt;config-locale&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1" vertex="1" parent="1">
           <mxGeometry x="540" y="1810" width="403" height="40" as="geometry" />
@@ -464,7 +470,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="j_qzdhmTrUuMT79mAP8w-48" value="&lt;span style=&quot;font-size: 20px;&quot;&gt;&lt;b&gt;modules-final&lt;/b&gt;&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="100" y="2840" width="220" height="40" as="geometry" />
+          <mxGeometry x="91" y="2840" width="220" height="40" as="geometry" />
         </mxCell>
         <mxCell id="j_qzdhmTrUuMT79mAP8w-49" value="&lt;span style=&quot;font-size: 20px;&quot;&gt;config-write-files-deferred&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1" vertex="1" parent="1">
           <mxGeometry x="550" y="2298" width="403" height="40" as="geometry" />
@@ -507,6 +513,38 @@
         </mxCell>
         <mxCell id="j_qzdhmTrUuMT79mAP8w-73" value="&lt;div&gt;&lt;span style=&quot;font-size: 15px;&quot;&gt;Skipping modules &#39;package-update-upgrade-install,puppet,chef,ansible,mcollective,salt-minion,phone-home,power-state-change&#39; because no applicable config is provided.&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 15px;&quot;&gt;&amp;nbsp;Skipping module named write-files-deferred, no deferred file defined in configuration&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="1080" y="2360" width="960" height="105" as="geometry" />
+        </mxCell>
+        <mxCell id="0e8B1iJN9fCpFt2v5tSL-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="j_qzdhmTrUuMT79mAP8w-2" target="j_qzdhmTrUuMT79mAP8w-41">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="GHj71r4uomrCojuJgVwK" name="第 3 页">
+    <mxGraphModel dx="2901" dy="1106" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="ZT0x_w2q-wHsWkepmBJy-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="ZT0x_w2q-wHsWkepmBJy-1" target="ZT0x_w2q-wHsWkepmBJy-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZT0x_w2q-wHsWkepmBJy-1" value="&lt;span style=&quot;font-size: 20px;&quot;&gt;&lt;b&gt;网卡&lt;/b&gt;&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-100" y="270" width="220" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ZT0x_w2q-wHsWkepmBJy-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.468;exitY=0.025;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="ZT0x_w2q-wHsWkepmBJy-2" target="ZT0x_w2q-wHsWkepmBJy-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZT0x_w2q-wHsWkepmBJy-2" value="&lt;span style=&quot;font-size: 20px;&quot;&gt;&lt;b&gt;GPU&lt;/b&gt;&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="500" y="270" width="220" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ZT0x_w2q-wHsWkepmBJy-3" value="&lt;span style=&quot;font-size: 20px;&quot;&gt;&lt;b&gt;PCIE Switch&lt;/b&gt;&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="190" y="80" width="220" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="efBA0Ux45EAjWTi9V0Sf-1" value="&lt;span style=&quot;font-size: 15px;&quot;&gt;ATS&lt;/span&gt;" style="text;html=1;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-330" y="210" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="efBA0Ux45EAjWTi9V0Sf-2" value="&lt;span style=&quot;font-size: 15px;&quot;&gt;ATS&lt;/span&gt;" style="text;html=1;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="650" y="220" width="60" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

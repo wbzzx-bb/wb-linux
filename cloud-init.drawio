@@ -276,7 +276,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="jMEiZeK-PVz9-C2t8JFR" name="第 2 页">
-    <mxGraphModel dx="2074" dy="1106" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2901" dy="1106" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -514,11 +514,20 @@
         <mxCell id="j_qzdhmTrUuMT79mAP8w-48" value="&lt;span style=&quot;font-size: 20px;&quot;&gt;&lt;b&gt;modules-final&lt;/b&gt;&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="91" y="2840" width="220" height="40" as="geometry" />
         </mxCell>
+        <mxCell id="PV5fJPOwkzviP6bjS8Nh-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="j_qzdhmTrUuMT79mAP8w-49" target="PV5fJPOwkzviP6bjS8Nh-32">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="j_qzdhmTrUuMT79mAP8w-49" value="&lt;span style=&quot;font-size: 20px;&quot;&gt;config-write-files-deferred&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1" parent="1" vertex="1">
           <mxGeometry x="550" y="2298" width="403" height="40" as="geometry" />
         </mxCell>
+        <mxCell id="PV5fJPOwkzviP6bjS8Nh-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="j_qzdhmTrUuMT79mAP8w-50" target="PV5fJPOwkzviP6bjS8Nh-34">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="j_qzdhmTrUuMT79mAP8w-50" value="&lt;span style=&quot;font-size: 20px;&quot;&gt;config-reset_rmc&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1" parent="1" vertex="1">
           <mxGeometry x="550" y="2400" width="403" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="PV5fJPOwkzviP6bjS8Nh-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="j_qzdhmTrUuMT79mAP8w-51" target="PV5fJPOwkzviP6bjS8Nh-36">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="j_qzdhmTrUuMT79mAP8w-51" value="&lt;span style=&quot;font-size: 20px;&quot;&gt;config-rightscale_userdata&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1" parent="1" vertex="1">
           <mxGeometry x="550" y="2510" width="403" height="40" as="geometry" />
@@ -538,8 +547,14 @@
         <mxCell id="j_qzdhmTrUuMT79mAP8w-56" value="&lt;span style=&quot;font-size: 20px;&quot;&gt;config-scripts-user&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1" parent="1" vertex="1">
           <mxGeometry x="550" y="3000" width="403" height="40" as="geometry" />
         </mxCell>
+        <mxCell id="PV5fJPOwkzviP6bjS8Nh-40" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="j_qzdhmTrUuMT79mAP8w-57" target="PV5fJPOwkzviP6bjS8Nh-39">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="j_qzdhmTrUuMT79mAP8w-57" value="&lt;span style=&quot;font-size: 20px;&quot;&gt;config-ssh-authkey-fingerprints&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1" parent="1" vertex="1">
           <mxGeometry x="550" y="3090" width="403" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="PV5fJPOwkzviP6bjS8Nh-42" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="j_qzdhmTrUuMT79mAP8w-58" target="PV5fJPOwkzviP6bjS8Nh-41">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="j_qzdhmTrUuMT79mAP8w-58" value="&lt;span style=&quot;font-size: 20px;&quot;&gt;config-keys-to-console&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1" parent="1" vertex="1">
           <mxGeometry x="550" y="3180" width="403" height="40" as="geometry" />
@@ -554,7 +569,7 @@
           <mxGeometry x="420" y="1180" width="560" height="50" as="geometry" />
         </mxCell>
         <mxCell id="j_qzdhmTrUuMT79mAP8w-73" value="&lt;div&gt;&lt;span style=&quot;font-size: 15px;&quot;&gt;Skipping modules &#39;package-update-upgrade-install,puppet,chef,ansible,mcollective,salt-minion,phone-home,power-state-change&#39; because no applicable config is provided.&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 15px;&quot;&gt;&amp;nbsp;Skipping module named write-files-deferred, no deferred file defined in configuration&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="1080" y="2360" width="960" height="105" as="geometry" />
+          <mxGeometry x="-140" y="2940" width="510" height="105" as="geometry" />
         </mxCell>
         <mxCell id="0e8B1iJN9fCpFt2v5tSL-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="j_qzdhmTrUuMT79mAP8w-2" target="j_qzdhmTrUuMT79mAP8w-41" edge="1">
           <mxGeometry relative="1" as="geometry" />
@@ -606,6 +621,24 @@
         </mxCell>
         <mxCell id="PV5fJPOwkzviP6bjS8Nh-30" value="&lt;span style=&quot;font-size: 15px;&quot;&gt;Runcmd: run arbitrary commands at rc.local with output to the console&lt;/span&gt;" style="text;html=1;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="1040" y="2052.62" width="590" height="37.38" as="geometry" />
+        </mxCell>
+        <mxCell id="PV5fJPOwkzviP6bjS8Nh-32" value="&lt;div&gt;&lt;span style=&quot;font-size: 15px;&quot;&gt;Write Files Deferred: Defer writing certain file&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1050" y="2299.31" width="320" height="37.38" as="geometry" />
+        </mxCell>
+        <mxCell id="PV5fJPOwkzviP6bjS8Nh-34" value="&lt;span style=&quot;font-size: 15px;&quot;&gt;Reset RMC: Reset rsct node id&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;font-size: 15px;&quot;&gt;仅用于IBM&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; font-size: 15px;&quot;&gt;PowerVM Hypervisor&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1040" y="2402.62" width="320" height="37.38" as="geometry" />
+        </mxCell>
+        <mxCell id="PV5fJPOwkzviP6bjS8Nh-36" value="&lt;span style=&quot;font-size: 15px;&quot;&gt;Rightscale Userdata: Support rightscale configuration hooks&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;font-size: 15px;&quot;&gt;24.1版本将移除&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1040" y="2512.62" width="500" height="37.38" as="geometry" />
+        </mxCell>
+        <mxCell id="PV5fJPOwkzviP6bjS8Nh-38" value="&lt;div&gt;&lt;span style=&quot;font-size: 15px;&quot;&gt;Scripts Vendor: Run vendor scripts&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1040" y="2622.62" width="500" height="37.38" as="geometry" />
+        </mxCell>
+        <mxCell id="PV5fJPOwkzviP6bjS8Nh-39" value="&lt;span style=&quot;font-size: 15px;&quot;&gt;SSH AuthKey Fingerprints: Log fingerprints of user SSH keys&lt;/span&gt;" style="text;html=1;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1040" y="3092.62" width="500" height="37.38" as="geometry" />
+        </mxCell>
+        <mxCell id="PV5fJPOwkzviP6bjS8Nh-41" value="&lt;span style=&quot;font-size: 15px;&quot;&gt;Keys to Console: Control which SSH host keys may be written to console&lt;/span&gt;" style="text;html=1;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1050" y="3182.62" width="500" height="37.38" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

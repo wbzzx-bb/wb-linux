@@ -559,6 +559,9 @@
         <mxCell id="j_qzdhmTrUuMT79mAP8w-58" value="&lt;span style=&quot;font-size: 20px;&quot;&gt;config-keys-to-console&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1" parent="1" vertex="1">
           <mxGeometry x="550" y="3180" width="403" height="40" as="geometry" />
         </mxCell>
+        <mxCell id="PV5fJPOwkzviP6bjS8Nh-44" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="j_qzdhmTrUuMT79mAP8w-59" target="PV5fJPOwkzviP6bjS8Nh-43">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="j_qzdhmTrUuMT79mAP8w-59" value="&lt;span style=&quot;font-size: 20px;&quot;&gt;config-install-hotplug&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1" parent="1" vertex="1">
           <mxGeometry x="550" y="3280" width="403" height="40" as="geometry" />
         </mxCell>
@@ -639,6 +642,15 @@
         </mxCell>
         <mxCell id="PV5fJPOwkzviP6bjS8Nh-41" value="&lt;span style=&quot;font-size: 15px;&quot;&gt;Keys to Console: Control which SSH host keys may be written to console&lt;/span&gt;" style="text;html=1;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="1050" y="3182.62" width="500" height="37.38" as="geometry" />
+        </mxCell>
+        <mxCell id="PV5fJPOwkzviP6bjS8Nh-46" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="PV5fJPOwkzviP6bjS8Nh-43" target="PV5fJPOwkzviP6bjS8Nh-45">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PV5fJPOwkzviP6bjS8Nh-43" value="&lt;span style=&quot;font-size: 15px;&quot;&gt;Install hotplug udev rules if supported and enabled&lt;/span&gt;" style="text;html=1;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1040" y="3282.62" width="350" height="37.38" as="geometry" />
+        </mxCell>
+        <mxCell id="PV5fJPOwkzviP6bjS8Nh-45" value="&lt;span style=&quot;font-size: 15px;&quot;&gt;写入/etc/udev/rules.d/90-cloud-init-hook-hotplug.rules&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;font-size: 15px;&quot;&gt;执行&lt;/span&gt;&lt;span style=&quot;background-color: transparent; font-size: 15px;&quot;&gt;[&#39;udevadm&#39;, &#39;control&#39;, &#39;--reload-rules&#39;]&amp;nbsp;&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1485.5" y="3270" width="619" height="117.38" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

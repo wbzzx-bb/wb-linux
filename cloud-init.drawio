@@ -463,11 +463,17 @@
         <mxCell id="j_qzdhmTrUuMT79mAP8w-41" value="&lt;span style=&quot;font-size: 20px;&quot;&gt;&lt;b&gt;modules-config&lt;/b&gt;&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="90" y="1930" width="220" height="40" as="geometry" />
         </mxCell>
+        <mxCell id="PV5fJPOwkzviP6bjS8Nh-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.75;entryDx=0;entryDy=0;" edge="1" parent="1" source="j_qzdhmTrUuMT79mAP8w-42" target="PV5fJPOwkzviP6bjS8Nh-27">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="j_qzdhmTrUuMT79mAP8w-42" value="&lt;span style=&quot;font-size: 20px;&quot;&gt;config-locale&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1" parent="1" vertex="1">
           <mxGeometry x="540" y="1810" width="403" height="40" as="geometry" />
         </mxCell>
         <mxCell id="j_qzdhmTrUuMT79mAP8w-43" value="&lt;span style=&quot;font-size: 20px;&quot;&gt;config-set-passwords&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1" parent="1" vertex="1">
           <mxGeometry x="540" y="1930" width="403" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="PV5fJPOwkzviP6bjS8Nh-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="j_qzdhmTrUuMT79mAP8w-44" target="PV5fJPOwkzviP6bjS8Nh-30">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="j_qzdhmTrUuMT79mAP8w-44" value="&lt;span style=&quot;font-size: 20px;&quot;&gt;config-runcmd&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1" parent="1" vertex="1">
           <mxGeometry x="540" y="2050" width="403" height="40" as="geometry" />
@@ -542,7 +548,7 @@
           <mxGeometry x="550" y="3280" width="403" height="40" as="geometry" />
         </mxCell>
         <mxCell id="j_qzdhmTrUuMT79mAP8w-71" value="&lt;span style=&quot;font-size: 15px;&quot;&gt;Skipping modules &#39;keyboard,spacewalk,yum-add-repo,ntp,timezone,disable-ec2-metadata&#39; because no applicable config is provided.&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;font-size: 15px;&quot;&gt;Skipping modules &#39;ssh-import-id&#39; because they are not verified on distro &#39;alinux&#39;.&amp;nbsp; To run anyway, add them to &#39;unverified_modules&#39; in config.&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="1090" y="1890" width="960" height="105" as="geometry" />
+          <mxGeometry x="470" y="2140" width="960" height="105" as="geometry" />
         </mxCell>
         <mxCell id="j_qzdhmTrUuMT79mAP8w-72" value="&lt;div&gt;&lt;span style=&quot;font-size: 15px;&quot;&gt;Skipping modules &#39;disk_setup,update_etc_hosts,ca-certs,rsyslog&#39; because no applicable config is provided.&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="420" y="1180" width="560" height="50" as="geometry" />
@@ -587,7 +593,19 @@
           <mxGeometry x="1654" y="1490" width="430" height="37.38" as="geometry" />
         </mxCell>
         <mxCell id="PV5fJPOwkzviP6bjS8Nh-23" value="&lt;span style=&quot;font-size: 15px;&quot;&gt;SSH: Configure SSH and SSH keys&lt;/span&gt;" style="text;html=1;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="1660" y="1570" width="430" height="37.38" as="geometry" />
+          <mxGeometry x="1660" y="1570" width="270" height="37.38" as="geometry" />
+        </mxCell>
+        <mxCell id="PV5fJPOwkzviP6bjS8Nh-25" value="&lt;div&gt;&lt;span style=&quot;font-size: 15px;&quot;&gt;[&#39;ssh-keygen&#39;, &#39;-t&#39;, &#39;rsa&#39;, &#39;-N&#39;, &#39;&#39;, &#39;-f&#39;, &#39;/etc/ssh/ssh_host_rsa_key&#39;]&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 15px;&quot;&gt;[&#39;ssh-keygen&#39;, &#39;-t&#39;, &#39;dsa&#39;, &#39;-N&#39;, &#39;&#39;, &#39;-f&#39;, &#39;/etc/ssh/ssh_host_dsa_key&#39;]&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 15px;&quot;&gt;[&#39;ssh-keygen&#39;, &#39;-t&#39;, &#39;ecdsa&#39;, &#39;-N&#39;, &#39;&#39;, &#39;-f&#39;, &#39;/etc/ssh/ssh_host_ecdsa_key&#39;]&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 15px;&quot;&gt;[&#39;ssh-keygen&#39;, &#39;-t&#39;, &#39;ed25519&#39;, &#39;-N&#39;, &#39;&#39;, &#39;-f&#39;, &#39;/etc/ssh/ssh_host_ed25519_key&#39;]&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="2051" y="1572.62" width="619" height="117.38" as="geometry" />
+        </mxCell>
+        <mxCell id="PV5fJPOwkzviP6bjS8Nh-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="PV5fJPOwkzviP6bjS8Nh-23" target="PV5fJPOwkzviP6bjS8Nh-25">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PV5fJPOwkzviP6bjS8Nh-27" value="&lt;span style=&quot;font-size: 15px;&quot;&gt;Locale: set system locale&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;font-size: 15px;&quot;&gt;默认设置为&lt;/span&gt;&lt;span style=&quot;background-color: transparent; font-size: 15px;&quot;&gt;en_US.UTF-8&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1040" y="1810" width="320" height="37.38" as="geometry" />
+        </mxCell>
+        <mxCell id="PV5fJPOwkzviP6bjS8Nh-30" value="&lt;span style=&quot;font-size: 15px;&quot;&gt;Runcmd: run arbitrary commands at rc.local with output to the console&lt;/span&gt;" style="text;html=1;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1040" y="2052.62" width="590" height="37.38" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

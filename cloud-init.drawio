@@ -663,6 +663,9 @@
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="woTZ-jj3W0npnDzJJ15w-40" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="330" y="-640" width="680" height="540" as="geometry" />
+        </mxCell>
         <mxCell id="woTZ-jj3W0npnDzJJ15w-1" value="&lt;span style=&quot;font-size: 20px;&quot;&gt;&lt;b&gt;开始&lt;/b&gt;&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="90" y="-1090" width="200" height="40" as="geometry" />
         </mxCell>
@@ -678,7 +681,7 @@
         <mxCell id="woTZ-jj3W0npnDzJJ15w-3" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;稳定接口命名被禁用&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="-120" y="-810" width="200" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="woTZ-jj3W0npnDzJJ15w-5" value="1、通过读取/sys/class/net/获取所有设备，排除桥接设备、bond设备、无mac设备、vlan设备、netfailover设备、mac为0的设备、openvswitch设备，返回可用设别(name, mac, driver, device_devid(name)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="woTZ-jj3W0npnDzJJ15w-5" value="1、通过读取/sys/class/net/获取所有设备，" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="330" y="-740" width="350" height="85" as="geometry" />
         </mxCell>
         <mxCell id="woTZ-jj3W0npnDzJJ15w-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="woTZ-jj3W0npnDzJJ15w-6" target="woTZ-jj3W0npnDzJJ15w-8">
@@ -774,6 +777,12 @@
         </mxCell>
         <mxCell id="woTZ-jj3W0npnDzJJ15w-36" value="&lt;span style=&quot;font-size: 16px;&quot;&gt;如果eth0存在且已连接，将其移到排序接口最前&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="75" y="110" width="230" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="woTZ-jj3W0npnDzJJ15w-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="woTZ-jj3W0npnDzJJ15w-1" target="woTZ-jj3W0npnDzJJ15w-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="woTZ-jj3W0npnDzJJ15w-39" value="&lt;span style=&quot;color: rgb(94, 44, 188); background-color: rgb(255, 255, 255); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; white-space: pre;&quot;&gt;natural_sort_key&lt;/span&gt;：&lt;div&gt;&lt;div style=&quot;color: rgb(41, 41, 41); background-color: rgb(255, 255, 255); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 19px; white-space: pre;&quot;&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(81, 81, 81);&quot;&gt;&quot;&quot;&quot;Sorting for Humans: natural sort order. Can be use as the key to sort&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(81, 81, 81);&quot;&gt;&amp;nbsp; &amp;nbsp; functions.&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(81, 81, 81);&quot;&gt;&amp;nbsp; &amp;nbsp; This will sort [&#39;eth0&#39;, &#39;ens3&#39;, &#39;ens10&#39;, &#39;ens12&#39;, &#39;ens8&#39;, &#39;ens0&#39;] as&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(81, 81, 81);&quot;&gt;&amp;nbsp; &amp;nbsp; [&#39;ens0&#39;, &#39;ens3&#39;, &#39;ens8&#39;, &#39;ens10&#39;, &#39;ens12&#39;, &#39;eth0&#39;] instead of the simple&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(81, 81, 81);&quot;&gt;&amp;nbsp; &amp;nbsp; python way which will produce [&#39;ens0&#39;, &#39;ens10&#39;, &#39;ens12&#39;, &#39;ens3&#39;, &#39;ens8&#39;,&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(81, 81, 81);&quot;&gt;&amp;nbsp; &amp;nbsp; &#39;eth0&#39;].&quot;&quot;&quot;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="370" y="-92.5" width="690" height="152.5" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
